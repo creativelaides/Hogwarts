@@ -45,43 +45,60 @@ Basado en las historias de usuario, el diagrama de clases incluirá las siguient
 
 <!-- ```plantuml
 @startuml
-class Asignatura {
+abstract class Base {
   + id: UUID
+}
+
+class Asignatura {
   + nombre: string
   + descripcion: string
 }
 
 class Profesor {
-  + id: UUID
   + nombre: string
   + apellido: string
+  + descripcion: string
+  + estatuDeSangre: enum
+  + fechaNacimiento: Date
 }
 
 class Casa {
-  + id: UUID
   + nombre: string
-  + fundadora: string
+  + fundador: string
 }
 
 class Estudiante {
-  + id: UUID
   + nombre: string
   + apellido: string
+  + descripcion: string
+  + estatuDeSangre: enum
   + fechaNacimiento: Date
 }
 
 class EstudianteAsignatura {
   + estudianteId: UUID
   + asignaturaId: UUID
-  + fechaInscripcion: Date
 }
+
+class Fotografia {
+  + url: string
+}
+
+Base <|-- Asignatura
+Base <|-- Profesor
+Base <|-- Casa
+Base <|-- Estudiante
+Base <|-- Fotografia
 
 Asignatura "1" -- "1" Profesor: "enseña"
 Casa "1" -- "0..*" Estudiante: "pertenece a"
 Estudiante "0..*" -- "0..*" Asignatura: "toma"
 Estudiante "0..*" -- "0..*" EstudianteAsignatura: "es"
 Asignatura "0..*" -- "0..*" EstudianteAsignatura: "es"
+Estudiante "0..*" -- "1" Fotografia: "puede tener"
+Profesor "0..*" -- "1" Fotografia: "puede tener"
 @enduml
+
 ``` -->
 
 En este diagrama:
