@@ -1,7 +1,8 @@
 using Hogwarts.Domain.Primitives;
 
 namespace Hogwarts.Domain;
-public class Teacher : Character
+public class Professor : Character
 {
+    public Guid SubjectId { get; set; }
     public Subject? Subject { get; set; }
 }

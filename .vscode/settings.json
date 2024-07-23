@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ASPNETCORE",
-        "dotnet"
+        "dotnet",
+        "Npgsql"
     ]
 }

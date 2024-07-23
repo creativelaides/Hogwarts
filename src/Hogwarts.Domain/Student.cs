@@ -4,6 +4,7 @@ namespace Hogwarts.Domain;
 
 public class Student : Character
 {
+    public Guid? HouseId { get; set; }
     public House? House { get; set;}
     
     public ICollection<Subject>? Subjects { get; set;}

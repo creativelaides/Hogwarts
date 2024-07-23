@@ -1,6 +1,19 @@
+using Hogwarts.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+/* builder.Services.AddDbContext<HogwartsDbContext>(
+    options => options
+    .UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection"))
+    .LogTo(
+        Console.WriteLine, 
+        new[]{DbLoggerCategory.Database.Command.Name},
+        LogLevel.Information)
+    .EnableSensitiveDataLogging()
+); */
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
