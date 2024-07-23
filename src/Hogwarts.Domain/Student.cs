@@ -2,13 +2,10 @@ using Hogwarts.Domain.Primitives;
 
 namespace Hogwarts.Domain;
 
-public class Student : EntityBase
+public class Student : Character
 {
-    public string? FirstName { get; set;}
-    public string? LastName { get; set;}
-    public string? description { get; set;}
-    public BloodStatus bloodStatus{ get; set;}
-    public int Age { get; set;}
-    public DateTime DateOfBirth { get; set;}
-
+    public House? House { get; set;}
+    
+    public ICollection<Subject>? Subjects { get; set;}
+    public ICollection<StudentSubject>? StudentSubjects { get; set;}
 }

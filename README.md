@@ -1,8 +1,15 @@
-# Proyecto de Gestión de Hogwarts
+<div align="center">
+<h1>Proyecto de Gestión de Escuela de Magia y Hechicería - Hogwarts</h1>
+<img margin=20px src ="project-top-image.svg" alt="ContainerApiDotnetAngularProject" align="center" height="150px">
+<br>
+<br>
+</div>
+
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Descripción
 
-Este proyecto es parte de la formación en Análisis y Desarrollo de Software (ADSO) del Servicio Nacional de Aprendizaje (SENA) durante el año 2024. El objetivo del proyecto es desarrollar una aplicación web para la gestión de estudiantes, casas, cursos y profesores en el universo de Harry Potter. El proyecto utiliza principios de Domain-Driven Design (DDD), arquitectura limpia, y patrones de CQRS y Mediator.
+Este proyecto es parte de la formación en Análisis y Desarrollo de Software (ADSO) del Servicio Nacional de Aprendizaje (SENA) durante el año 2024. El objetivo del proyecto es desarrollar una aplicación web para la gestión de estudiantes, casas, asignaturas y profesores en el universo de Harry Potter. El proyecto utiliza principios de Domain-Driven Design (DDD), arquitectura limpia, y patrones de CQRS y Mediator.
 
 ## Tecnologías Utilizadas
 
@@ -89,7 +96,7 @@ El diagrama de clases incluye las siguientes entidades y relaciones:
 
 5. **Acceder a la aplicación:**
 
-    - El backend estará disponible en `http://localhost:5000`.
+    - El backend estará disponible en `http://localhost:5001`.
     - El frontend estará disponible en `http://localhost:4200`.
 
 ## Contribuciones
@@ -104,4 +111,4 @@ Las contribuciones son bienvenidas. Por favor, sigue los pasos a continuación p
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo la Licencia Pública de Mozilla (MPL) 2.0. Para más información, consulta el archivo [LICENSE](LICENSE).
