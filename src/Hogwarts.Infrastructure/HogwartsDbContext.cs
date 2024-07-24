@@ -16,7 +16,9 @@ public class HogwartsDbContext : DbContext
     public DbSet<House> Houses { get; set; }
     public DbSet<Subject> Subjects { get; set; }
     public DbSet<Picture> Pictures { get; set; }
-    public DbSet<StudentSubject> StudentSubjects { get; set; }
+
+    // public DbSet<StudentSubject> StudentSubjects { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder
