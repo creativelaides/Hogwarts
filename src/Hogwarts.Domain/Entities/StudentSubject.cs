@@ -1,4 +1,4 @@
-namespace Hogwarts.Domain;
+namespace Hogwarts.Domain.Entities;
 
 public class StudentSubject
 {

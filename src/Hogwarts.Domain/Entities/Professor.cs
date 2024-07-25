@@ -1,6 +1,8 @@
-using Hogwarts.Domain.Primitives;
+using Hogwarts.Domain.Entities.Primitives;
 
-namespace Hogwarts.Domain;
+
+namespace Hogwarts.Domain.Entities;
+
 public class Professor : Character
 {
     public Guid SubjectId { get; set; }

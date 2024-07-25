@@ -1,4 +1,4 @@
-namespace Hogwarts.Domain.Primitives;
+namespace Hogwarts.Domain.Entities.Primitives;
 
 public abstract class EntityBase
 {
