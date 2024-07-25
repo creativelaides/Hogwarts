@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Proyecto de Gestión de Escuela de Magia y Hechicería - Hogwarts</h1>
-<img margin=20px src ="project-top-image.svg" alt="ContainerApiDotnetAngularProject" align="center" height="150px">
+<img margin=20px src ="assets/project-top-image.svg" alt="ContainerApiDotnetAngularProject" align="center" height="150px">
 <br>
 <br>
 </div>
