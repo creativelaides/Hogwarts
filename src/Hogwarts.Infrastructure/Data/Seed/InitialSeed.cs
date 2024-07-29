@@ -1,8 +1,27 @@
 using Bogus;
+
 using Hogwarts.Domain.Entities;
 using Hogwarts.Domain.Entities.Primitives;
 
 namespace Hogwarts.Infrastructure.Data.Seed;
+
+/// <summary>
+/// Initial seed data for the Hogwarts application.
+/// </summary>
+/// <remarks>
+/// This class contains methods to generate fake data for the Hogwarts application.
+/// </remarks>
+/// <example>
+/// <code>
+/// var initialSeed = new InitialSeed();
+/// initialSeed.InitialSeedData();
+/// </code>
+/// </example>
+/// <seealso cref="InitialSeedHouses"/>
+/// <seealso cref="InitialSeedSubjects"/>
+/// <seealso cref="InitialSeedPictures"/>
+/// <seealso cref="InitialSeedStudents"/>
+/// <seealso cref="InitialSeedProfessors"/>
 
 public class InitialSeed
 {
@@ -44,12 +63,49 @@ public class InitialSeed
             .RuleFor(s => s.PictureId, f => f.PickRandom(Pictures).Id);
 
         Students = studentFaker.Generate(20);
+
+        // Verifica duplicados
+        var uniquePictures = new HashSet<Guid>();
+        foreach (var student in Students)
+        {
+            while (!uniquePictures.Add(student.PictureId))
+            {
+                student.PictureId = Pictures[new Random().Next(Pictures.Count)].Id;
+            }
+        }
     }
+
+    public void InitialSeedProfessors()
+    {
+        var professorFaker = new Faker<Professor>("es")
+            .RuleFor(p => p.Id, f => Guid.NewGuid())
+            .RuleFor(p => p.FirstName, f => f.Name.FirstName())
+            .RuleFor(p => p.LastName, f => f.Name.LastName())
+            .RuleFor(p => p.Description, f => f.Lorem.Sentence())
+            .RuleFor(p => p.Age, f => f.Random.Int(25, 65))
+            .RuleFor(p => p.DateOfBirth, (f, p) => f.Date.Past(p.Age, DateTime.UtcNow.AddYears(-p.Age)))
+            .RuleFor(p => p.BloodStatus, f => f.PickRandom<BloodStatus>())
+            .RuleFor(p => p.SubjectId, f => f.PickRandom(Subjects).Id)
+            .RuleFor(p => p.PictureId, f => f.PickRandom(Pictures).Id);
+
+        Professors = professorFaker.Generate(10);
+
+        // Verifica duplicados
+        var uniquePictures = new HashSet<Guid>();
+        foreach (var professor in Professors)
+        {
+            while (!uniquePictures.Add(professor.PictureId))
+            {
+                professor.PictureId = Pictures[new Random().Next(Pictures.Count)].Id;
+            }
+        }
+    }
+
 
     public void InitialSeedHouses()
     {
-        Houses = new List<House>
-    {
+        Houses =
+    [
         new() {
             Id = Guid.NewGuid(),
             Name = "Gryffindor",
@@ -78,23 +134,7 @@ public class InitialSeed
             Animal = "Serpent",
             Element = "Water"
         }
-    };
-    }
-
-    public void InitialSeedProfessors()
-    {
-        var professorFaker = new Faker<Professor>("es")
-            .RuleFor(p => p.Id, f => Guid.NewGuid())
-            .RuleFor(p => p.FirstName, f => f.Name.FirstName())
-            .RuleFor(p => p.LastName, f => f.Name.LastName())
-            .RuleFor(p => p.Description, f => f.Lorem.Sentence())
-            .RuleFor(p => p.Age, f => f.Random.Int(25, 65))
-            .RuleFor(p => p.DateOfBirth, (f, p) => f.Date.Past(p.Age, DateTime.UtcNow.AddYears(-p.Age)))
-            .RuleFor(p => p.BloodStatus, f => f.PickRandom<BloodStatus>())
-            .RuleFor(p => p.SubjectId, f => f.PickRandom(Subjects).Id)
-            .RuleFor(p => p.PictureId, f => f.PickRandom(Pictures).Id);
-
-        Professors = professorFaker.Generate(10);
+    ];
     }
 
     public void InitialSeedSubjects()

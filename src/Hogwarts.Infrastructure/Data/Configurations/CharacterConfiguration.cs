@@ -49,6 +49,9 @@ public class CharacterConfiguration : IEntityTypeConfiguration<Character>
             .HasForeignKey<Character>(c => c.PictureId)
             .OnDelete(DeleteBehavior.Cascade);
 
+        // Remove unique constraint on PictureId
+        builder.HasIndex(c => c.PictureId).IsUnique(false);
+
         // Configure discriminador
         builder.HasDiscriminator<string>("Discriminator")
             .HasValue<Character>("Character")

@@ -63,11 +63,13 @@ public class HogwartsDbContext : DbContext
         var seed = new InitialSeed();
         seed.InitialSeedData();
 
+        // Agrega los datos de la semilla
         modelBuilder.Entity<House>().HasData([.. seed.Houses]);
         modelBuilder.Entity<Subject>().HasData([.. seed.Subjects]);
         modelBuilder.Entity<Picture>().HasData([.. seed.Pictures]);
         modelBuilder.Entity<Student>().HasData([.. seed.Students]);
         modelBuilder.Entity<Professor>().HasData([.. seed.Professors]);
     }
+
 }
 
