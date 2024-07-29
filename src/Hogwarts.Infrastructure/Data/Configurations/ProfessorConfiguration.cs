@@ -1,40 +1,34 @@
+using Hogwarts.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Hogwarts.Domain.Entities;
-
 namespace Hogwarts.Infrastructure.Data.Configurations;
 
+/// <summary>
+/// Configuration for the Professor entity.
+/// </summary>
 public class ProfessorConfiguration : IEntityTypeConfiguration<Professor>
 {
     public void Configure(EntityTypeBuilder<Professor> builder)
     {
+        // Configure table name
         builder.ToTable("Professors");
 
-        builder.HasKey(p => p.Id);
+        // Configure properties specific to Professor
+        builder.Property(p => p.SubjectId)
+            .IsRequired(false); // SubjectId is optional
 
-        builder.Property(p => p.FirstName)
-            .HasMaxLength(50)
-            .IsRequired();
-
-        builder.Property(p => p.LastName)
-            .HasMaxLength(50)
-            .IsRequired();
-
-        builder.Property(p => p.Description)
-            .HasMaxLength(500);
-
-        builder.Property(p => p.Age)
-            .IsRequired();
-
-        builder.Property(p => p.DateOfBirth)
-            .IsRequired();
-
-        builder.Property(p => p.BloodStatus)
-            .IsRequired();
-
+        // Configure relationships
         builder.HasOne(p => p.Subject)
-            .WithOne(s => s.Professor)
-            .HasForeignKey<Professor>(p => p.SubjectId);
+            .WithMany()
+            .HasForeignKey(p => p.SubjectId)
+            .OnDelete(DeleteBehavior.SetNull);
+
+        // Configure picture relationship if needed
+        builder.HasOne(p => p.Picture)
+            .WithOne()
+            .HasForeignKey<Professor>(p => p.PictureId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }
+

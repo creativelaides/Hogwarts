@@ -1,44 +1,50 @@
+using Hogwarts.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Hogwarts.Domain.Entities;
-
 namespace Hogwarts.Infrastructure.Data.Configurations;
 
+/// <summary>
+/// Configuration for the Student entity.
+/// </summary>
 public class StudentConfiguration : IEntityTypeConfiguration<Student>
 {
     public void Configure(EntityTypeBuilder<Student> builder)
     {
+        // Configure table name
         builder.ToTable("Students");
 
-        builder.HasKey(s => s.Id);
+        // Configure properties specific to Student
+        builder.Property(s => s.HouseId)
+            .IsRequired(false);
 
-        builder.Property(s => s.FirstName)
-            .HasMaxLength(50)
-            .IsRequired();
-
-        builder.Property(s => s.LastName)
-            .HasMaxLength(50)
-            .IsRequired();
-
-        builder.Property(s => s.Description)
-            .HasMaxLength(500);
-
-        builder.Property(s => s.Age)
-            .IsRequired();
-
-        builder.Property(s => s.DateOfBirth)
-            .IsRequired();
-
-        builder.Property(s => s.BloodStatus)
-            .IsRequired();
-
+        // Configure relationships
         builder.HasOne(s => s.House)
             .WithMany(h => h.Students)
-            .HasForeignKey(s => s.HouseId);
+            .HasForeignKey(s => s.HouseId)
+            .OnDelete(DeleteBehavior.SetNull);
 
-        builder.HasMany(s => s.StudentSubjects)
-            .WithOne(ss => ss.Student)
-            .HasForeignKey(ss => ss.StudentId);
+        builder.HasMany(s => s.Subjects)
+            .WithMany(sub => sub.Students)
+            .UsingEntity<StudentSubject>(
+                j => j
+                    .HasOne(ss => ss.Subject)
+                    .WithMany(s => s.StudentSubjects)
+                    .HasForeignKey(ss => ss.SubjectId),
+                j => j
+                    .HasOne(ss => ss.Student)
+                    .WithMany(s => s.StudentSubjects)
+                    .HasForeignKey(ss => ss.StudentId),
+                j =>
+                {
+                    j.HasKey(t => new { t.StudentId, t.SubjectId });
+                });
+
+        // Configure picture relationship if needed
+        builder.HasOne(s => s.Picture)
+            .WithOne()
+            .HasForeignKey<Student>(s => s.PictureId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }
+

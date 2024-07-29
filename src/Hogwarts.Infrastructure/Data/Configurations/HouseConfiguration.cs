@@ -4,7 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Hogwarts.Domain.Entities;
 
 namespace Hogwarts.Infrastructure.Data.Configurations;
-
+/// <summary>
+/// Configuration for the House entity.
+/// </summary>
 public class HouseConfiguration : IEntityTypeConfiguration<House>
 {
     public void Configure(EntityTypeBuilder<House> builder)

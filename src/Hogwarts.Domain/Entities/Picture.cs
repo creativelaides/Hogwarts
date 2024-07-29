@@ -1,10 +1,25 @@
 using Hogwarts.Domain.Entities.Primitives;
 
-namespace Hogwarts.Domain.Entities;
-
-public class Picture : EntityBase
+namespace Hogwarts.Domain.Entities
 {
-    public string? Url { get; set; }
-    public Guid? CharacterId { get; set; }
-    public Character? Character { get; set; }
+    /// <summary>
+    /// Represents a picture associated with a character in the Hogwarts domain.
+    /// </summary>
+    public class Picture : EntityBase
+    {
+        /// <summary>
+        /// Gets or sets the URL of the picture.
+        /// </summary>
+        public string? Url { get; set; }
+
+        /// <summary>
+        /// Gets or sets the identifier of the character associated with this picture.
+        /// </summary>
+        public Guid? CharacterId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the character associated with this picture.
+        /// </summary>
+        public Character? Character { get; set; }
+    }
 }

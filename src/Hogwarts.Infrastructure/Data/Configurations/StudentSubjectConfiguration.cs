@@ -4,6 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Hogwarts.Domain.Entities;
 
 namespace Hogwarts.Infrastructure.Data.Configurations;
+/// <summary>
+/// Configuration for the StudentSubject entity.
+/// </summary>
 
 public class StudentSubjectConfiguration : IEntityTypeConfiguration<StudentSubject>
 {

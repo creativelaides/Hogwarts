@@ -1,10 +1,20 @@
 using Hogwarts.Domain.Entities.Primitives;
 
-
-namespace Hogwarts.Domain.Entities;
-
-public class Professor : Character
+namespace Hogwarts.Domain.Entities
 {
-    public Guid SubjectId { get; set; }
-    public Subject? Subject { get; set; }
+    /// <summary>
+    /// Represents a professor in the Hogwarts domain.
+    /// </summary>
+    public class Professor : Character
+    {
+        /// <summary>
+        /// Gets or sets the identifier of the subject taught by the professor.
+        /// </summary>
+        public Guid? SubjectId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the subject associated with the professor.
+        /// </summary>
+        public Subject? Subject { get; set; }
+    }
 }
