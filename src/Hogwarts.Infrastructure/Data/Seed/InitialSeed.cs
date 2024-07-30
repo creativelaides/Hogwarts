@@ -23,7 +23,7 @@ namespace Hogwarts.Infrastructure.Data.Seed;
 /// <seealso cref="InitialSeedStudents"/>
 /// <seealso cref="InitialSeedProfessors"/>
 
-public class InitialSeed
+internal class InitialSeed
 {
     public List<Student> Students { get; set; } = [];
     public List<House> Houses { get; set; } = [];

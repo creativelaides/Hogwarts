@@ -1,13 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using Hogwarts.Domain.Entities;
 using Hogwarts.Infrastructure.Data.Configurations;
 using Hogwarts.Infrastructure.Data.Seed;
+using Hogwarts.Infrastructure.Identities.Models;
+using Hogwarts.Infrastructure.Identities.Security;
 
 namespace Hogwarts.Infrastructure;
 
-public class HogwartsDbContext : DbContext
+public class HogwartsDbContext : IdentityDbContext<AppUser>
 {
     public DbSet<Student> Students { get; set; }
     public DbSet<Professor> Professors { get; set; }
@@ -23,6 +26,8 @@ public class HogwartsDbContext : DbContext
     public HogwartsDbContext() : base()
     {
     }
+
+    
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -53,6 +58,7 @@ public class HogwartsDbContext : DbContext
             }
         }
 
+        // Configura las entidades en la base de datos
         modelBuilder.ApplyConfiguration(new CharacterConfiguration());
         modelBuilder.ApplyConfiguration(new StudentConfiguration());
         modelBuilder.ApplyConfiguration(new HouseConfiguration());
@@ -60,15 +66,18 @@ public class HogwartsDbContext : DbContext
         modelBuilder.ApplyConfiguration(new SubjectConfiguration());
         modelBuilder.ApplyConfiguration(new PictureConfiguration());
 
+        // Agrega los datos de la semilla
         var seed = new InitialSeed();
         seed.InitialSeedData();
 
-        // Agrega los datos de la semilla
         modelBuilder.Entity<House>().HasData([.. seed.Houses]);
         modelBuilder.Entity<Subject>().HasData([.. seed.Subjects]);
         modelBuilder.Entity<Picture>().HasData([.. seed.Pictures]);
         modelBuilder.Entity<Student>().HasData([.. seed.Students]);
         modelBuilder.Entity<Professor>().HasData([.. seed.Professors]);
+
+        // Perfiles de identities
+        SecurityProfiles.UploadSecurityProfiles(modelBuilder);
     }
 
 }
