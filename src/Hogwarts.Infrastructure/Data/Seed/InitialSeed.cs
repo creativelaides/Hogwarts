@@ -59,7 +59,8 @@ internal class InitialSeed
             .RuleFor(s => s.Description, f => f.Lorem.Sentence())
             .RuleFor(s => s.Age, f => f.Random.Int(11, 17))
             .RuleFor(s => s.DateOfBirth, (f, s) => f.Date.Past(s.Age, DateTime.UtcNow.AddYears(-s.Age)))
-            .RuleFor(s => s.BloodStatus, f => f.PickRandom<BloodStatus>());
+            .RuleFor(s => s.BloodStatus, f => f.PickRandom<BloodStatus>())
+            .RuleFor(s => s.HouseId, f => f.PickRandom(Houses).Id);
 
         Students = studentFaker.Generate(20);
     }

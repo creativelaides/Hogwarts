@@ -26,7 +26,7 @@ public class CreateCourseCommand
                 Id = Guid.NewGuid(),
                 Name = request.CreateCourseRequest.Name,
                 Description = request.CreateCourseRequest.Description,
-                ProfessorId = request.CreateCourseRequest.ProfessorId,
+                // ProfessorId = request.CreateCourseRequest.ProfessorId,
             };
 
             _context.Add(course);

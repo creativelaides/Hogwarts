@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using Hogwarts.Domain.Entities;
@@ -23,24 +22,7 @@ public class HogwartsDbContext : IdentityDbContext<AppUser>
     }
 
     // Constructor sin parámetros para las herramientas de migración
-    public HogwartsDbContext() : base()
-    {
-    }
-
-    
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (!optionsBuilder.IsConfigured)
-        {
-            optionsBuilder.UseNpgsql("Server=localhost; Port=5432; Database=HogwartsDB; User Id=hogwarts; Password=HelloHorse789456*; Pooling=false; MinPoolSize=1; MaxPoolSize=100; Timeout=15; SslMode=Disable")
-                          .LogTo(
-                              Console.WriteLine,
-                              new[] { DbLoggerCategory.Database.Command.Name },
-                              LogLevel.Information)
-                          .EnableSensitiveDataLogging();
-        }
-    }
+    public HogwartsDbContext() : base(){}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
