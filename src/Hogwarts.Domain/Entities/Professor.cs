@@ -8,13 +8,13 @@ namespace Hogwarts.Domain.Entities
     public class Professor : Character
     {
         /// <summary>
-        /// Gets or sets the identifier of the subject taught by the professor.
+        /// Gets or sets the identifier of the course taught by the professor.
         /// </summary>
-        public Guid? SubjectId { get; set; }
+        public Guid? CourseId { get; set; }
 
         /// <summary>
-        /// Gets or sets the subject associated with the professor.
+        /// Gets or sets the course associated with the professor.
         /// </summary>
-        public Subject? Subject { get; set; }
+        public Course? Course { get; set; }
     }
 }

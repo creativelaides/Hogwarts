@@ -5,23 +5,23 @@ using Hogwarts.Domain.Entities;
 
 namespace Hogwarts.Infrastructure.Data.Configurations;
 /// <summary>
-/// Configuration for the StudentSubject entity.
+/// Configuration for the StudentCourse entity.
 /// </summary>
 
-public class StudentSubjectConfiguration : IEntityTypeConfiguration<StudentSubject>
+public class StudentCourseConfiguration : IEntityTypeConfiguration<StudentCourse>
 {
-    public void Configure(EntityTypeBuilder<StudentSubject> builder)
+    public void Configure(EntityTypeBuilder<StudentCourse> builder)
     {
-        builder.ToTable("StudentSubjects");
+        builder.ToTable("StudentCourses");
 
-        builder.HasKey(ss => new { ss.StudentId, ss.SubjectId });
+        builder.HasKey(sc => new { sc.StudentId, sc.CourseId });
 
-        builder.HasOne(ss => ss.Student)
-            .WithMany(s => s.StudentSubjects)
-            .HasForeignKey(ss => ss.StudentId);
+        builder.HasOne(sc => sc.Student)
+            .WithMany(s => s.StudentCourses)
+            .HasForeignKey(sc => sc.StudentId);
 
-        builder.HasOne(ss => ss.Subject)
-            .WithMany(s => s.StudentSubjects)
-            .HasForeignKey(ss => ss.SubjectId);
+        builder.HasOne(sc => sc.Course)
+            .WithMany(s => s.StudentCourses)
+            .HasForeignKey(sc => sc.CourseId);
     }
 }

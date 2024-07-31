@@ -36,7 +36,7 @@ internal static class SecurityProfiles
                     Id = 1,
                     RoleId = adminId,
                     ClaimType = CustomClaims.POLICIES,
-                    ClaimValue = CustomPolicies.SUBJECT_CREATE,
+                    ClaimValue = CustomPolicies.COURSE_CREATE,
                 },
 
                 new IdentityRoleClaim<string>
@@ -44,7 +44,7 @@ internal static class SecurityProfiles
                     Id = 2,
                     RoleId = adminId,
                     ClaimType = CustomClaims.POLICIES,
-                    ClaimValue = CustomPolicies.SUBJECT_READ,
+                    ClaimValue = CustomPolicies.COURSE_READ,
                 },
 
                 new IdentityRoleClaim<string>
@@ -52,7 +52,7 @@ internal static class SecurityProfiles
                     Id = 3,
                     RoleId = adminId,
                     ClaimType = CustomClaims.POLICIES,
-                    ClaimValue = CustomPolicies.SUBJECT_UPDATE,
+                    ClaimValue = CustomPolicies.COURSE_UPDATE,
                 },
 
                 new IdentityRoleClaim<string>
@@ -60,7 +60,7 @@ internal static class SecurityProfiles
                     Id = 4,
                     RoleId = adminId,
                     ClaimType = CustomClaims.POLICIES,
-                    ClaimValue = CustomPolicies.SUBJECT_DELETE,
+                    ClaimValue = CustomPolicies.COURSE_DELETE,
                 },
 
                 new IdentityRoleClaim<string>
@@ -132,7 +132,7 @@ internal static class SecurityProfiles
                     Id = 13,
                     RoleId = clientId,
                     ClaimType = CustomClaims.POLICIES,
-                    ClaimValue = CustomPolicies.SUBJECT_READ,
+                    ClaimValue = CustomPolicies.COURSE_READ,
                 },
 
                 new IdentityRoleClaim<string>

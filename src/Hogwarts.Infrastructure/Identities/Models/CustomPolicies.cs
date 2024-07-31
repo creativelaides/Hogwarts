@@ -2,10 +2,10 @@ namespace Hogwarts.Infrastructure.Identities.Models;
 
 public static class CustomPolicies
 {
-    public const string SUBJECT_READ = nameof(SUBJECT_READ);
-    public const string SUBJECT_CREATE = nameof(SUBJECT_CREATE);
-    public const string SUBJECT_UPDATE = nameof(SUBJECT_UPDATE);
-    public const string SUBJECT_DELETE = nameof(SUBJECT_DELETE);
+    public const string COURSE_READ = nameof(COURSE_READ);
+    public const string COURSE_CREATE = nameof(COURSE_CREATE);
+    public const string COURSE_UPDATE = nameof(COURSE_UPDATE);
+    public const string COURSE_DELETE = nameof(COURSE_DELETE);
 
     public const string PROFESSOR_READ = nameof(PROFESSOR_READ);
     public const string PROFESSOR_CREATE = nameof(PROFESSOR_CREATE);

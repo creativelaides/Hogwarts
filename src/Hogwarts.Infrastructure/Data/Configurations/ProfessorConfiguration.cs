@@ -15,13 +15,13 @@ public class ProfessorConfiguration : IEntityTypeConfiguration<Professor>
         builder.ToTable("Professors");
 
         // Configure properties specific to Professor
-        builder.Property(p => p.SubjectId)
-            .IsRequired(false); // SubjectId is optional
+        builder.Property(p => p.CourseId)
+            .IsRequired(false); // CourseId is optional
 
         // Configure relationships
-        builder.HasOne(p => p.Subject)
+        builder.HasOne(p => p.Course)
             .WithMany()
-            .HasForeignKey(p => p.SubjectId)
+            .HasForeignKey(p => p.CourseId)
             .OnDelete(DeleteBehavior.SetNull);
 
         // Configure picture relationship if needed

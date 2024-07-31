@@ -1,9 +1,9 @@
 namespace Hogwarts.Domain.Entities
 {
     /// <summary>
-    /// Represents the association between a student and a subject in the Hogwarts domain.
+    /// Represents the association between a student and a course in the Hogwarts domain.
     /// </summary>
-    public class StudentSubject
+    public class StudentCourse
     {
         /// <summary>
         /// Gets or sets the identifier of the student.
@@ -11,18 +11,18 @@ namespace Hogwarts.Domain.Entities
         public Guid StudentId { get; set; }
 
         /// <summary>
-        /// Gets or sets the student associated with this subject.
+        /// Gets or sets the student associated with this course.
         /// </summary>
         public Student? Student { get; set; }
 
         /// <summary>
-        /// Gets or sets the identifier of the subject.
+        /// Gets or sets the identifier of the course.
         /// </summary>
-        public Guid SubjectId { get; set; }
+        public Guid CourseId { get; set; }
 
         /// <summary>
-        /// Gets or sets the subject associated with this student.
+        /// Gets or sets the course associated with this student.
         /// </summary>
-        public Subject? Subject { get; set; }
+        public Course? Course { get; set; }
     }
 }

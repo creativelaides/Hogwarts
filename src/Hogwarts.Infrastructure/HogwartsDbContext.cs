@@ -15,7 +15,7 @@ public class HogwartsDbContext : IdentityDbContext<AppUser>
     public DbSet<Student> Students { get; set; }
     public DbSet<Professor> Professors { get; set; }
     public DbSet<House> Houses { get; set; }
-    public DbSet<Subject> Subjects { get; set; }
+    public DbSet<Course> Courses { get; set; }
     public DbSet<Picture> Pictures { get; set; }
 
     public HogwartsDbContext(DbContextOptions<HogwartsDbContext> options) : base(options)
@@ -63,7 +63,7 @@ public class HogwartsDbContext : IdentityDbContext<AppUser>
         modelBuilder.ApplyConfiguration(new StudentConfiguration());
         modelBuilder.ApplyConfiguration(new HouseConfiguration());
         modelBuilder.ApplyConfiguration(new ProfessorConfiguration());
-        modelBuilder.ApplyConfiguration(new SubjectConfiguration());
+        modelBuilder.ApplyConfiguration(new CourseConfiguration());
         modelBuilder.ApplyConfiguration(new PictureConfiguration());
 
         // Agrega los datos de la semilla
@@ -71,7 +71,7 @@ public class HogwartsDbContext : IdentityDbContext<AppUser>
         seed.InitialSeedData();
 
         modelBuilder.Entity<House>().HasData([.. seed.Houses]);
-        modelBuilder.Entity<Subject>().HasData([.. seed.Subjects]);
+        modelBuilder.Entity<Course>().HasData([.. seed.Courses]);
         modelBuilder.Entity<Picture>().HasData([.. seed.Pictures]);
         modelBuilder.Entity<Student>().HasData([.. seed.Students]);
         modelBuilder.Entity<Professor>().HasData([.. seed.Professors]);
@@ -81,4 +81,3 @@ public class HogwartsDbContext : IdentityDbContext<AppUser>
     }
 
 }
-

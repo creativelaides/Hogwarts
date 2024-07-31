@@ -18,13 +18,13 @@ namespace Hogwarts.Domain.Entities
         public House? House { get; set; }
 
         /// <summary>
-        /// Gets or sets the collection of subjects the student is enrolled in.
+        /// Gets or sets the collection of courses the student is enrolled in.
         /// </summary>
-        public ICollection<Subject> Subjects { get; set; } = [];
+        public ICollection<Course> Courses { get; set; } = [];
 
         /// <summary>
-        /// Gets or sets the collection of student-subject relationships.
+        /// Gets or sets the collection of student-course relationships.
         /// </summary>
-        public ICollection<StudentSubject> StudentSubjects { get; set; } = [];
+        public ICollection<StudentCourse> StudentCourses { get; set; } = [];
     }
 }

@@ -1,6 +1,6 @@
-namespace Hogwarts.Application.Features.Subjects.Commands;
+namespace Hogwarts.Application.Features.CourseOperations.Commands;
 
-public class CreateSubjectRequest
+public class CreateCourseRequest
 {
     public string? Name { get; set; }
     public string? Description { get; set; }

@@ -24,21 +24,23 @@ public class StudentConfiguration : IEntityTypeConfiguration<Student>
             .HasForeignKey(s => s.HouseId)
             .OnDelete(DeleteBehavior.SetNull);
 
-        builder.HasMany(s => s.Subjects)
-            .WithMany(sub => sub.Students)
-            .UsingEntity<StudentSubject>(
+        builder.HasMany(c => c.Courses)
+            .WithMany(c => c.Students)
+            .UsingEntity<StudentCourse>(
                 j => j
-                    .HasOne(ss => ss.Subject)
-                    .WithMany(s => s.StudentSubjects)
-                    .HasForeignKey(ss => ss.SubjectId),
+                    .HasOne(sc => sc.Course)
+                    .WithMany(c => c.StudentCourses)
+                    .HasForeignKey(sc => sc.CourseId),
                 j => j
-                    .HasOne(ss => ss.Student)
-                    .WithMany(s => s.StudentSubjects)
-                    .HasForeignKey(ss => ss.StudentId),
+                    .HasOne(sc => sc.Student)
+                    .WithMany(s => s.StudentCourses)
+                    .HasForeignKey(sc => sc.StudentId),
                 j =>
                 {
-                    j.HasKey(t => new { t.StudentId, t.SubjectId });
-                });
+                    j
+                    .HasKey(t => new { t.StudentId, t.CourseId });
+                }
+                );
 
         // Configure picture relationship if needed
         builder.HasOne(s => s.Picture)
