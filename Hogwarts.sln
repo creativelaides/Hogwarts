@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogwarts.Domain", "src\Hogw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogwarts.Infrastructure", "src\Hogwarts.Infrastructure\Hogwarts.Infrastructure.csproj", "{6D5A36CB-E380-48E5-88FE-675D127C608A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogwarts.Application", "src\Hogwarts.Application\Hogwarts.Application.csproj", "{8DBD0889-E371-4083-97D3-86C99627B859}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,10 +34,15 @@ Global
 		{6D5A36CB-E380-48E5-88FE-675D127C608A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5A36CB-E380-48E5-88FE-675D127C608A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5A36CB-E380-48E5-88FE-675D127C608A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBD0889-E371-4083-97D3-86C99627B859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBD0889-E371-4083-97D3-86C99627B859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBD0889-E371-4083-97D3-86C99627B859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBD0889-E371-4083-97D3-86C99627B859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{822CC403-030A-487A-A751-3C1B8B65D231} = {07674D0F-C0E9-4706-8F55-E95C8B13860B}
 		{E13074F5-EDC2-41E3-93FC-AB9DF6DED5F0} = {07674D0F-C0E9-4706-8F55-E95C8B13860B}
 		{6D5A36CB-E380-48E5-88FE-675D127C608A} = {07674D0F-C0E9-4706-8F55-E95C8B13860B}
+		{8DBD0889-E371-4083-97D3-86C99627B859} = {07674D0F-C0E9-4706-8F55-E95C8B13860B}
 	EndGlobalSection
 EndGlobal
