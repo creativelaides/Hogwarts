@@ -21,7 +21,7 @@ public class HogwartsDbContext : IdentityDbContext<AppUser>
     {
     }
 
-    // Constructor sin parámetros para las herramientas de migración
+    // Constructor without parameters for migrations tools
     public HogwartsDbContext() : base(){}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

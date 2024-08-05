@@ -5,15 +5,16 @@ using Microsoft.Extensions.Logging;
 
 namespace Hogwarts.Infrastructure;
 
-public static class DependencyInjectionInfrastructure
+public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(
         this IServiceCollection services,
         IConfiguration configuration)
     {
         services.AddDbContext<HogwartsDbContext>
-        (
-            options => options
+        (options =>
+        {
+            options
             .UseNpgsql(
                 configuration.GetConnectionString("DefaultConnection")
                 // ,b => b.MigrationsAssembly("Hogwarts.Infrastructure")
@@ -22,8 +23,8 @@ public static class DependencyInjectionInfrastructure
                 Console.WriteLine,
                 new[] { DbLoggerCategory.Database.Command.Name },
                 LogLevel.Information)
-            .EnableSensitiveDataLogging()
-        );
+            .EnableSensitiveDataLogging();
+        });
 
         return services;
     }

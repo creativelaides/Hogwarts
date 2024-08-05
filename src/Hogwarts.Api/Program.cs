@@ -1,3 +1,5 @@
+using Hogwarts.Api;
+using Hogwarts.Api.Extensions;
 using Hogwarts.Application;
 using Hogwarts.Infrastructure;
 
@@ -6,16 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddControllers();
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
-});
+builder.Services.AddApi();
 
 var app = builder.Build();
 
@@ -29,6 +22,8 @@ if (app.Environment.IsDevelopment())
 // app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+await app.SeedDataAuthentication();
 
 app.MapControllers();
 
