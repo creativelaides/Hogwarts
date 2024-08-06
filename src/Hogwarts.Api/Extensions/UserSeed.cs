@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Hogwarts.Api.Extensions;
 
-public static class DataSeed
+public static class UserSeed
 {
     public static async Task SeedDataAuthentication(
         this IApplicationBuilder app
@@ -47,11 +47,6 @@ public static class DataSeed
 
                 await userManager.CreateAsync(userClient, "P@ssw0rd123");
                 await userManager.AddToRoleAsync(userClient, CustomRoles.CLIENT);
-            }
-
-            if (!context.Set<StudentCourse>().Any())
-            {
-                
             }
         }
         catch (Exception e)

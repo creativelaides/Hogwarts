@@ -50,73 +50,73 @@ namespace Hogwarts.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("750b7b2f-fcb3-4b2a-aa3e-c3820c918d8f"),
-                            Description = "Ipsum tempore consectetur ut voluptas omnis molestias.",
+                            Id = new Guid("c7e8c92d-07ac-4b70-ac85-51893fa639b7"),
+                            Description = "Explicabo aliquid dolores.",
                             Name = "Potions",
-                            ProfessorId = new Guid("96022ed7-22c6-4ddc-b519-64418afd3b17")
+                            ProfessorId = new Guid("8576eed3-5912-4b62-b2e7-b82673c93d0c")
                         },
                         new
                         {
-                            Id = new Guid("7451bceb-6aa7-406f-9a55-870906df7eaa"),
-                            Description = "Est error id aut a.",
+                            Id = new Guid("fcf889c5-2c34-4ce7-92bc-d76afd69cfa8"),
+                            Description = "Exercitationem qui aut id voluptas molestias laudantium.",
+                            Name = "Divination",
+                            ProfessorId = new Guid("60031c17-23da-40fd-b98f-88564796f289")
+                        },
+                        new
+                        {
+                            Id = new Guid("4a9beba4-d0e3-486c-8d60-6d372b1b0da9"),
+                            Description = "Voluptatem ullam ipsa nemo accusamus at.",
+                            Name = "Transfiguration",
+                            ProfessorId = new Guid("5203e0e4-ec98-4d54-890d-0b3b6bc9090f")
+                        },
+                        new
+                        {
+                            Id = new Guid("6674d8f1-6bb2-467c-b865-4b3218400204"),
+                            Description = "Nulla quia unde.",
                             Name = "Arithmancy",
-                            ProfessorId = new Guid("bcca110f-4d47-4464-acf3-be4d19f9bbe7")
+                            ProfessorId = new Guid("6eee5a2a-3d65-41f0-aadd-a58bdfb1c9a2")
                         },
                         new
                         {
-                            Id = new Guid("bb335af0-bb41-4f01-932f-c2b853a3b9b0"),
-                            Description = "Ex voluptas nemo velit et voluptates ea quaerat dolorem.",
-                            Name = "History of Magic",
-                            ProfessorId = new Guid("bf078d20-2627-43f1-b030-4fc08ee12942")
-                        },
-                        new
-                        {
-                            Id = new Guid("d9e159ed-a3b7-485d-9569-73a733eefa12"),
-                            Description = "Illum alias nam quisquam eius pariatur vero quam commodi.",
-                            Name = "Arithmancy",
-                            ProfessorId = new Guid("b8c94937-5f78-4684-9b0c-1372acb80cef")
-                        },
-                        new
-                        {
-                            Id = new Guid("7c7bdae7-3295-4788-bc9a-c309864d0548"),
-                            Description = "Atque et vel non est.",
+                            Id = new Guid("5de388f6-f352-4f25-a51a-a3ffa4b16652"),
+                            Description = "Voluptatem ut quis.",
                             Name = "Herbology",
-                            ProfessorId = new Guid("d11bc147-af2f-4ffb-bec5-e23e78ecf69c")
+                            ProfessorId = new Guid("75f724fc-8732-4e4b-89a5-456d852d7bc4")
                         },
                         new
                         {
-                            Id = new Guid("4bdf89fb-fe52-4d0c-b4af-e285e8d57fc6"),
-                            Description = "Itaque quidem accusamus minus.",
+                            Id = new Guid("a3ce5b6c-1e86-4882-857e-2c5edca7165c"),
+                            Description = "Beatae ut perspiciatis accusantium dignissimos omnis ducimus.",
                             Name = "Divination",
-                            ProfessorId = new Guid("45326cf2-d2fd-436b-8467-3a42a7526ff4")
+                            ProfessorId = new Guid("bc142fbd-7a29-4280-ab36-6e2e5a427c47")
                         },
                         new
                         {
-                            Id = new Guid("b9df4ade-39ae-424c-8271-133cf6bef19b"),
-                            Description = "Nisi autem occaecati voluptates iste ea eius dolor.",
-                            Name = "Charms",
-                            ProfessorId = new Guid("a9df18cc-d325-4030-97af-1d89d0ebbe39")
+                            Id = new Guid("257f0993-7158-499a-a453-49ce2617757c"),
+                            Description = "Eveniet qui amet consequatur dicta rerum dignissimos provident tempore.",
+                            Name = "Transfiguration",
+                            ProfessorId = new Guid("cd7d42b6-4059-497f-9539-b0f5a083f8bf")
                         },
                         new
                         {
-                            Id = new Guid("6c47a25e-4dc0-440a-847b-c8387f6ef877"),
-                            Description = "Voluptate sit ipsa.",
-                            Name = "Divination",
-                            ProfessorId = new Guid("570d8591-fa0a-4320-80fd-60e6923b88d4")
+                            Id = new Guid("594b6ea2-8673-4907-af27-f4134e7d0286"),
+                            Description = "Eligendi est occaecati ut quasi veniam aliquid saepe quasi.",
+                            Name = "Defense Against the Dark Arts",
+                            ProfessorId = new Guid("703982ae-85cb-4c6f-ae1b-b0ce653a3524")
                         },
                         new
                         {
-                            Id = new Guid("a2d2f532-f931-428a-b777-8ab00ef28234"),
-                            Description = "Eos nobis dolores consequatur qui quia non voluptatem.",
-                            Name = "Flying",
-                            ProfessorId = new Guid("050cb727-0eed-49d8-85eb-d73fe591db8e")
+                            Id = new Guid("505fbebc-3e0d-44ea-9be1-ebb7ed7c449a"),
+                            Description = "Qui cupiditate delectus et voluptatem deserunt nostrum cumque tenetur.",
+                            Name = "Potions",
+                            ProfessorId = new Guid("db030056-0ed6-4e3d-a7c3-46d586d61e15")
                         },
                         new
                         {
-                            Id = new Guid("54b4588f-9516-4184-8d9c-f749c6754d6a"),
-                            Description = "Facere inventore ut.",
-                            Name = "Charms",
-                            ProfessorId = new Guid("e0bb8237-4c88-4260-8b97-37cc9d36dab4")
+                            Id = new Guid("e536896f-fe74-4b11-86d6-c1a191a16b11"),
+                            Description = "In quam voluptatum iure rerum accusantium consequatur et.",
+                            Name = "Transfiguration",
+                            ProfessorId = new Guid("13a78a3c-9472-4453-9b1f-d3c8879b57c9")
                         });
                 });
 
@@ -153,7 +153,7 @@ namespace Hogwarts.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("109dd5e7-164c-4cec-b623-d28be70cc2c2"),
+                            Id = new Guid("2f30c323-0c50-41ca-bfd5-2525af1f1be9"),
                             Animal = "Lion",
                             Element = "Fire",
                             Founder = "Godric Gryffindor",
@@ -161,7 +161,7 @@ namespace Hogwarts.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("a784a261-3009-484a-9ca5-d141630c932f"),
+                            Id = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946"),
                             Animal = "Badger",
                             Element = "Earth",
                             Founder = "Helga Hufflepuff",
@@ -169,7 +169,7 @@ namespace Hogwarts.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("40f4b844-b0a4-4178-a5d9-c2ae70a8932b"),
+                            Id = new Guid("02b1b2d3-9b14-4dd9-8c76-35ef470ce651"),
                             Animal = "Eagle",
                             Element = "Air",
                             Founder = "Rowena Ravenclaw",
@@ -177,7 +177,7 @@ namespace Hogwarts.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("24248a2a-d323-47fd-8be7-3b9e415d9a91"),
+                            Id = new Guid("bf902b43-faed-42ca-97b8-aa1c67acd8ca"),
                             Animal = "Serpent",
                             Element = "Water",
                             Founder = "Salazar Slytherin",
@@ -205,183 +205,183 @@ namespace Hogwarts.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("01961b12-3bc9-40df-b700-085730a85346"),
-                            CharacterId = new Guid("4a5ef299-cb93-414f-ab79-9a68a8fca29a"),
-                            Url = "https://picsum.photos/640/480/?image=629"
+                            Id = new Guid("3022baec-cf7b-4e28-9ccf-83af7177cb49"),
+                            CharacterId = new Guid("7418e34e-cf82-4b61-8f06-bd87e809b732"),
+                            Url = "https://picsum.photos/640/480/?image=590"
                         },
                         new
                         {
-                            Id = new Guid("832220bb-0e09-48c4-a5ad-e13d62719654"),
-                            CharacterId = new Guid("35d5e574-b5c6-476c-b64f-c6afff2f216f"),
-                            Url = "https://picsum.photos/640/480/?image=815"
+                            Id = new Guid("5c52fa2f-817d-4d99-9ef0-d9e385a5f62c"),
+                            CharacterId = new Guid("41b03c4c-1bc5-4a39-86a7-4636030670b2"),
+                            Url = "https://picsum.photos/640/480/?image=75"
                         },
                         new
                         {
-                            Id = new Guid("fcebf517-7d51-462b-be46-edad1a296a5f"),
-                            CharacterId = new Guid("42bad019-adf0-4cd9-945a-0fb4d544b560"),
-                            Url = "https://picsum.photos/640/480/?image=1061"
+                            Id = new Guid("adde71af-a544-4bd4-a49a-94ea5d76ff00"),
+                            CharacterId = new Guid("93366cef-84f4-49a3-93a4-5ce413f0725b"),
+                            Url = "https://picsum.photos/640/480/?image=915"
                         },
                         new
                         {
-                            Id = new Guid("27570a3f-0958-4cf4-95cc-b4e41ce69e24"),
-                            CharacterId = new Guid("f3823bd4-ff2c-492b-b350-384eacdacc73"),
-                            Url = "https://picsum.photos/640/480/?image=486"
+                            Id = new Guid("d44b0265-3715-4440-a697-a3079f5f3694"),
+                            CharacterId = new Guid("5c077fb3-5636-45ce-aacc-ef2d80234b49"),
+                            Url = "https://picsum.photos/640/480/?image=616"
                         },
                         new
                         {
-                            Id = new Guid("84978f33-1faf-41eb-b815-2366962d0806"),
-                            CharacterId = new Guid("6e71a59c-e1fe-4475-85a8-8ae7eadd0b1c"),
-                            Url = "https://picsum.photos/640/480/?image=727"
+                            Id = new Guid("d9175b5e-91af-451c-8fff-79d43741528e"),
+                            CharacterId = new Guid("6a2658cc-8085-4210-a8d8-dc980836e02b"),
+                            Url = "https://picsum.photos/640/480/?image=566"
                         },
                         new
                         {
-                            Id = new Guid("71d18bfd-426e-45e7-974e-15c4646f5391"),
-                            CharacterId = new Guid("89cdf4ee-480d-4fdc-a241-2648bf12edca"),
-                            Url = "https://picsum.photos/640/480/?image=56"
+                            Id = new Guid("f1120108-2c4d-48cd-af34-27b59bcb2a22"),
+                            CharacterId = new Guid("9d9afdd6-367a-4e96-b24e-5f2ee0539a3d"),
+                            Url = "https://picsum.photos/640/480/?image=1007"
                         },
                         new
                         {
-                            Id = new Guid("9a2c71d6-5f21-4ff6-bbd0-746a42880da2"),
-                            CharacterId = new Guid("d8d74e5f-2243-49bc-ad52-09dbbc241143"),
-                            Url = "https://picsum.photos/640/480/?image=177"
+                            Id = new Guid("b4ff8d82-e01f-4b1e-963e-6df648cd06a5"),
+                            CharacterId = new Guid("978a1a89-6ed7-4865-9622-ce6f295d9510"),
+                            Url = "https://picsum.photos/640/480/?image=39"
                         },
                         new
                         {
-                            Id = new Guid("7fd2381b-8139-4e3b-afa1-a11284082781"),
-                            CharacterId = new Guid("c92e4206-5682-4cba-8e74-6cc289adbaad"),
-                            Url = "https://picsum.photos/640/480/?image=685"
+                            Id = new Guid("01a52a03-4d4a-4db3-83ff-50b2aee22f9f"),
+                            CharacterId = new Guid("37d0e30d-f8e6-49d9-b8ee-eab54f552064"),
+                            Url = "https://picsum.photos/640/480/?image=0"
                         },
                         new
                         {
-                            Id = new Guid("7d762647-a6f7-40ae-8ef5-dd09e035533e"),
-                            CharacterId = new Guid("7d89bc90-0d93-4ef4-bdab-10d246056524"),
-                            Url = "https://picsum.photos/640/480/?image=758"
+                            Id = new Guid("768a7e4a-df7c-46c8-830e-459ff6b8e55a"),
+                            CharacterId = new Guid("bcbc4038-4a9f-4c20-8242-9f0f8a0933c0"),
+                            Url = "https://picsum.photos/640/480/?image=173"
                         },
                         new
                         {
-                            Id = new Guid("f184d732-805a-4d97-81db-e3a935e84278"),
-                            CharacterId = new Guid("afcdd9d2-8eca-4b8d-8d3e-25b558fa20b0"),
-                            Url = "https://picsum.photos/640/480/?image=985"
+                            Id = new Guid("8312bf62-ebd1-42e5-8398-ddbc76ed666e"),
+                            CharacterId = new Guid("0a0aa4a1-6748-404c-a046-947ea7864c43"),
+                            Url = "https://picsum.photos/640/480/?image=704"
                         },
                         new
                         {
-                            Id = new Guid("26983c54-ce47-444f-9c7f-b945466ef5cd"),
-                            CharacterId = new Guid("dd77d8e5-841d-497e-8d49-12add2937745"),
-                            Url = "https://picsum.photos/640/480/?image=893"
+                            Id = new Guid("2af32132-0740-4923-bb73-3c2296231d26"),
+                            CharacterId = new Guid("f0e36503-ca55-46d2-9899-444bda9da567"),
+                            Url = "https://picsum.photos/640/480/?image=765"
                         },
                         new
                         {
-                            Id = new Guid("0890ce8e-4df3-43e8-8ea5-37cc9c2ffaf0"),
-                            CharacterId = new Guid("2056f277-04a5-4993-b42b-b95409861339"),
-                            Url = "https://picsum.photos/640/480/?image=589"
+                            Id = new Guid("84b38a4d-f3f7-4cbe-ac95-33f6f23a212c"),
+                            CharacterId = new Guid("bf9dbe8b-63d9-447c-9772-7ba915118e08"),
+                            Url = "https://picsum.photos/640/480/?image=242"
                         },
                         new
                         {
-                            Id = new Guid("92b9be95-712b-4bcc-9ba4-be31e7a7d12e"),
-                            CharacterId = new Guid("e2e07556-0189-41a2-ae8d-7cd046628a10"),
-                            Url = "https://picsum.photos/640/480/?image=851"
+                            Id = new Guid("68cc589b-ca7c-4236-9bf6-40bd6bb7e5ca"),
+                            CharacterId = new Guid("f85e0f5b-e124-4f90-8a0f-6c7152152b14"),
+                            Url = "https://picsum.photos/640/480/?image=990"
                         },
                         new
                         {
-                            Id = new Guid("b89b05b8-ebdf-4862-aca3-7b5e83ecea69"),
-                            CharacterId = new Guid("e6eb03f6-3127-49f1-b04b-20b436a9de53"),
-                            Url = "https://picsum.photos/640/480/?image=375"
+                            Id = new Guid("d97d9548-c5c4-4bfc-936e-d1449d5629e8"),
+                            CharacterId = new Guid("0e34e2b7-dc7e-484a-9639-3b8f94716770"),
+                            Url = "https://picsum.photos/640/480/?image=342"
                         },
                         new
                         {
-                            Id = new Guid("6cd7ed15-c8f8-413f-9ca2-26a51a9f5696"),
-                            CharacterId = new Guid("2d2ee102-93ff-4bcd-9585-44935c1bebf5"),
-                            Url = "https://picsum.photos/640/480/?image=624"
+                            Id = new Guid("7adb817c-d359-4c20-869e-d93d9d8e9dd2"),
+                            CharacterId = new Guid("950b9baa-05b2-4ebb-8394-adeae4552a30"),
+                            Url = "https://picsum.photos/640/480/?image=989"
                         },
                         new
                         {
-                            Id = new Guid("31320530-ceb3-4571-864e-8c34b747b924"),
-                            CharacterId = new Guid("13b2c9c6-6d59-4c7c-be24-9ab380a2f1fa"),
-                            Url = "https://picsum.photos/640/480/?image=85"
+                            Id = new Guid("949868c0-d154-4932-b953-fe87367cfdf9"),
+                            CharacterId = new Guid("3431da91-11a1-4d44-8758-bf227a41453f"),
+                            Url = "https://picsum.photos/640/480/?image=800"
                         },
                         new
                         {
-                            Id = new Guid("0c4ed495-86c1-4fec-9942-71d6c32bb552"),
-                            CharacterId = new Guid("f26e87b8-c04e-4952-9ec4-7f1dd7553dbf"),
-                            Url = "https://picsum.photos/640/480/?image=147"
+                            Id = new Guid("30fd2ff0-ed86-448e-85a6-034fb3e388ef"),
+                            CharacterId = new Guid("cc7105aa-51f5-489a-be3e-279f95d3e518"),
+                            Url = "https://picsum.photos/640/480/?image=649"
                         },
                         new
                         {
-                            Id = new Guid("e022c7ee-03ec-4eb3-b391-4a59a74501c1"),
-                            CharacterId = new Guid("dfb80e7b-1d9a-4db5-9b5f-6b0f5f147f44"),
-                            Url = "https://picsum.photos/640/480/?image=732"
+                            Id = new Guid("43cb966a-9e47-4625-bee7-979b2ce91ead"),
+                            CharacterId = new Guid("4e913452-1f25-4d58-a79e-38778c1a7512"),
+                            Url = "https://picsum.photos/640/480/?image=527"
                         },
                         new
                         {
-                            Id = new Guid("c300d4ca-aa33-4789-bde4-8590e09270f4"),
-                            CharacterId = new Guid("daaebe41-85ce-40c2-b7dd-1d10c819ca58"),
-                            Url = "https://picsum.photos/640/480/?image=419"
+                            Id = new Guid("31d9c3fd-05a6-4e86-ab75-4d4cfc564dda"),
+                            CharacterId = new Guid("27f6b61f-42ce-4b38-a983-75a6838d751c"),
+                            Url = "https://picsum.photos/640/480/?image=947"
                         },
                         new
                         {
-                            Id = new Guid("1e33eb0f-ab78-437e-8437-f8d4080d014c"),
-                            CharacterId = new Guid("40642373-111c-477c-b9bc-2262b98bd46d"),
-                            Url = "https://picsum.photos/640/480/?image=131"
+                            Id = new Guid("274f5101-03f6-45ea-9247-9ec159d5b660"),
+                            CharacterId = new Guid("27609a7c-4ce8-41b3-a252-5208dd3edf5a"),
+                            Url = "https://picsum.photos/640/480/?image=226"
                         },
                         new
                         {
-                            Id = new Guid("0b2f9612-cfc0-4164-8a99-b31f697b1b43"),
-                            CharacterId = new Guid("96022ed7-22c6-4ddc-b519-64418afd3b17"),
-                            Url = "https://picsum.photos/640/480/?image=753"
+                            Id = new Guid("d350f495-7b2c-4a29-ad57-9574a7db51ea"),
+                            CharacterId = new Guid("8576eed3-5912-4b62-b2e7-b82673c93d0c"),
+                            Url = "https://picsum.photos/640/480/?image=809"
                         },
                         new
                         {
-                            Id = new Guid("4a14947b-ed67-4957-b9f8-8e6bc03e621c"),
-                            CharacterId = new Guid("bcca110f-4d47-4464-acf3-be4d19f9bbe7"),
-                            Url = "https://picsum.photos/640/480/?image=417"
+                            Id = new Guid("41435b4a-c060-43ec-bf77-232d7ceec2d3"),
+                            CharacterId = new Guid("60031c17-23da-40fd-b98f-88564796f289"),
+                            Url = "https://picsum.photos/640/480/?image=214"
                         },
                         new
                         {
-                            Id = new Guid("f6fb37f8-b57e-4b03-a4f7-256113ec4f5f"),
-                            CharacterId = new Guid("bf078d20-2627-43f1-b030-4fc08ee12942"),
-                            Url = "https://picsum.photos/640/480/?image=873"
+                            Id = new Guid("23cbf5d0-9e29-4046-a221-7fa6cc54fc32"),
+                            CharacterId = new Guid("5203e0e4-ec98-4d54-890d-0b3b6bc9090f"),
+                            Url = "https://picsum.photos/640/480/?image=105"
                         },
                         new
                         {
-                            Id = new Guid("130b48a8-4ffb-4c4b-8917-7fd7a5d475e1"),
-                            CharacterId = new Guid("b8c94937-5f78-4684-9b0c-1372acb80cef"),
-                            Url = "https://picsum.photos/640/480/?image=731"
+                            Id = new Guid("3fb8e9d0-a3fe-4881-9804-f1dcfb045f49"),
+                            CharacterId = new Guid("6eee5a2a-3d65-41f0-aadd-a58bdfb1c9a2"),
+                            Url = "https://picsum.photos/640/480/?image=821"
                         },
                         new
                         {
-                            Id = new Guid("40ad5a79-dfff-4c30-b75e-451a5b84cedb"),
-                            CharacterId = new Guid("d11bc147-af2f-4ffb-bec5-e23e78ecf69c"),
-                            Url = "https://picsum.photos/640/480/?image=769"
+                            Id = new Guid("cbe5943e-c9b9-432e-a5dd-f61a71ddd3b2"),
+                            CharacterId = new Guid("75f724fc-8732-4e4b-89a5-456d852d7bc4"),
+                            Url = "https://picsum.photos/640/480/?image=543"
                         },
                         new
                         {
-                            Id = new Guid("19a3455f-96cf-4aed-a37b-f90e34df0fcf"),
-                            CharacterId = new Guid("45326cf2-d2fd-436b-8467-3a42a7526ff4"),
-                            Url = "https://picsum.photos/640/480/?image=431"
+                            Id = new Guid("33d84a92-eca5-4b3a-8000-63fb23f5d381"),
+                            CharacterId = new Guid("bc142fbd-7a29-4280-ab36-6e2e5a427c47"),
+                            Url = "https://picsum.photos/640/480/?image=380"
                         },
                         new
                         {
-                            Id = new Guid("911bd40e-fa45-4ba8-918f-90cf10bc2bb5"),
-                            CharacterId = new Guid("a9df18cc-d325-4030-97af-1d89d0ebbe39"),
-                            Url = "https://picsum.photos/640/480/?image=943"
+                            Id = new Guid("516a3c6c-55e1-4ffa-a67f-3c1573ff0079"),
+                            CharacterId = new Guid("cd7d42b6-4059-497f-9539-b0f5a083f8bf"),
+                            Url = "https://picsum.photos/640/480/?image=191"
                         },
                         new
                         {
-                            Id = new Guid("5ad0a7ff-e61c-4654-9aea-09b50f4f72b1"),
-                            CharacterId = new Guid("570d8591-fa0a-4320-80fd-60e6923b88d4"),
-                            Url = "https://picsum.photos/640/480/?image=268"
+                            Id = new Guid("e0b78d72-e6d0-4a60-afe3-945ab9162f6c"),
+                            CharacterId = new Guid("703982ae-85cb-4c6f-ae1b-b0ce653a3524"),
+                            Url = "https://picsum.photos/640/480/?image=892"
                         },
                         new
                         {
-                            Id = new Guid("b8da827f-f045-4098-ba3a-db3fd7dcc520"),
-                            CharacterId = new Guid("050cb727-0eed-49d8-85eb-d73fe591db8e"),
-                            Url = "https://picsum.photos/640/480/?image=202"
+                            Id = new Guid("b6518dd1-0624-490c-9c17-311d4cc700a2"),
+                            CharacterId = new Guid("db030056-0ed6-4e3d-a7c3-46d586d61e15"),
+                            Url = "https://picsum.photos/640/480/?image=1069"
                         },
                         new
                         {
-                            Id = new Guid("0f57f8a3-3576-4738-941c-09d2a1af3df7"),
-                            CharacterId = new Guid("e0bb8237-4c88-4260-8b97-37cc9d36dab4"),
-                            Url = "https://picsum.photos/640/480/?image=180"
+                            Id = new Guid("90f26602-3842-4bf6-b669-2f8221729add"),
+                            CharacterId = new Guid("13a78a3c-9472-4453-9b1f-d3c8879b57c9"),
+                            Url = "https://picsum.photos/640/480/?image=1044"
                         });
                 });
 
@@ -548,13 +548,13 @@ namespace Hogwarts.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ee478e3c-43d8-494b-a7b6-52e70a04b1af",
+                            Id = "4f2e0863-e7ba-4ce8-b268-abb12148a718",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "27ccf3eb-1430-47ee-86cf-c6d52a9ee3a0",
+                            Id = "0849e8f0-5d5d-422f-8fe5-14ca51cce10b",
                             Name = "Client",
                             NormalizedName = "CLIENT"
                         });
@@ -590,105 +590,105 @@ namespace Hogwarts.Infrastructure.Migrations
                             Id = 1,
                             ClaimType = "POLICIES",
                             ClaimValue = "COURSE_CREATE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 2,
                             ClaimType = "POLICIES",
                             ClaimValue = "COURSE_READ",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 3,
                             ClaimType = "POLICIES",
                             ClaimValue = "COURSE_UPDATE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 4,
                             ClaimType = "POLICIES",
                             ClaimValue = "COURSE_DELETE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 5,
                             ClaimType = "POLICIES",
                             ClaimValue = "PROFESSOR_READ",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 6,
                             ClaimType = "POLICIES",
                             ClaimValue = "PROFESSOR_CREATE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 7,
                             ClaimType = "POLICIES",
                             ClaimValue = "PROFESSOR_UPDATE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 8,
                             ClaimType = "POLICIES",
                             ClaimValue = "PROFESSOR_DELETE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 9,
                             ClaimType = "POLICIES",
                             ClaimValue = "STUDENT_READ",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 10,
                             ClaimType = "POLICIES",
                             ClaimValue = "STUDENT_CREATE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 11,
                             ClaimType = "POLICIES",
                             ClaimValue = "STUDENT_UPDATE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 12,
                             ClaimType = "POLICIES",
                             ClaimValue = "STUDENT_DELETE",
-                            RoleId = "ee478e3c-43d8-494b-a7b6-52e70a04b1af"
+                            RoleId = "4f2e0863-e7ba-4ce8-b268-abb12148a718"
                         },
                         new
                         {
                             Id = 13,
                             ClaimType = "POLICIES",
                             ClaimValue = "COURSE_READ",
-                            RoleId = "27ccf3eb-1430-47ee-86cf-c6d52a9ee3a0"
+                            RoleId = "0849e8f0-5d5d-422f-8fe5-14ca51cce10b"
                         },
                         new
                         {
                             Id = 14,
                             ClaimType = "POLICIES",
                             ClaimValue = "PROFESSOR_READ",
-                            RoleId = "27ccf3eb-1430-47ee-86cf-c6d52a9ee3a0"
+                            RoleId = "0849e8f0-5d5d-422f-8fe5-14ca51cce10b"
                         },
                         new
                         {
                             Id = 15,
                             ClaimType = "POLICIES",
                             ClaimValue = "STUDENT_READ",
-                            RoleId = "27ccf3eb-1430-47ee-86cf-c6d52a9ee3a0"
+                            RoleId = "0849e8f0-5d5d-422f-8fe5-14ca51cce10b"
                         });
                 });
 
@@ -787,123 +787,123 @@ namespace Hogwarts.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("96022ed7-22c6-4ddc-b519-64418afd3b17"),
-                            Age = 30,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1972, 4, 12, 5, 36, 9, 6, DateTimeKind.Utc).AddTicks(2619),
-                            Description = "Necessitatibus est est natus architecto assumenda dolores et qui.",
-                            FirstName = "Laura",
-                            LastName = "Dávila",
-                            PictureId = new Guid("0b2f9612-cfc0-4164-8a99-b31f697b1b43"),
-                            CourseId = new Guid("750b7b2f-fcb3-4b2a-aa3e-c3820c918d8f")
-                        },
-                        new
-                        {
-                            Id = new Guid("bcca110f-4d47-4464-acf3-be4d19f9bbe7"),
-                            Age = 32,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1984, 3, 25, 12, 49, 44, 622, DateTimeKind.Utc).AddTicks(5497),
-                            Description = "Eius explicabo quia distinctio sed est temporibus voluptas labore.",
-                            FirstName = "Guadalupe",
-                            LastName = "Polanco",
-                            PictureId = new Guid("4a14947b-ed67-4957-b9f8-8e6bc03e621c"),
-                            CourseId = new Guid("7451bceb-6aa7-406f-9a55-870906df7eaa")
-                        },
-                        new
-                        {
-                            Id = new Guid("bf078d20-2627-43f1-b030-4fc08ee12942"),
-                            Age = 49,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1973, 9, 15, 19, 4, 25, 605, DateTimeKind.Utc).AddTicks(7054),
-                            Description = "Et voluptatem illo numquam.",
-                            FirstName = "Agustín",
-                            LastName = "Magaña",
-                            PictureId = new Guid("f6fb37f8-b57e-4b03-a4f7-256113ec4f5f"),
-                            CourseId = new Guid("bb335af0-bb41-4f01-932f-c2b853a3b9b0")
-                        },
-                        new
-                        {
-                            Id = new Guid("b8c94937-5f78-4684-9b0c-1372acb80cef"),
-                            Age = 64,
+                            Id = new Guid("8576eed3-5912-4b62-b2e7-b82673c93d0c"),
+                            Age = 36,
                             BloodStatus = 4,
-                            DateOfBirth = new DateTime(1944, 8, 23, 14, 3, 17, 580, DateTimeKind.Utc).AddTicks(6682),
-                            Description = "Vero aut dolore voluptates nulla consequatur quas voluptatem est et.",
-                            FirstName = "Beatriz",
-                            LastName = "Godoy",
-                            PictureId = new Guid("130b48a8-4ffb-4c4b-8917-7fd7a5d475e1"),
-                            CourseId = new Guid("d9e159ed-a3b7-485d-9569-73a733eefa12")
+                            DateOfBirth = new DateTime(1965, 7, 29, 19, 44, 1, 810, DateTimeKind.Utc).AddTicks(5024),
+                            Description = "Mollitia quis dolor pariatur.",
+                            FirstName = "Alberto",
+                            LastName = "Zúñiga",
+                            PictureId = new Guid("d350f495-7b2c-4a29-ad57-9574a7db51ea"),
+                            CourseId = new Guid("c7e8c92d-07ac-4b70-ac85-51893fa639b7")
                         },
                         new
                         {
-                            Id = new Guid("d11bc147-af2f-4ffb-bec5-e23e78ecf69c"),
-                            Age = 58,
-                            BloodStatus = 3,
-                            DateOfBirth = new DateTime(1936, 2, 23, 16, 19, 38, 668, DateTimeKind.Utc).AddTicks(9764),
-                            Description = "Quas quae recusandae sunt aut voluptatibus sequi.",
-                            FirstName = "Luisa",
-                            LastName = "Carrillo",
-                            PictureId = new Guid("40ad5a79-dfff-4c30-b75e-451a5b84cedb"),
-                            CourseId = new Guid("7c7bdae7-3295-4788-bc9a-c309864d0548")
-                        },
-                        new
-                        {
-                            Id = new Guid("45326cf2-d2fd-436b-8467-3a42a7526ff4"),
-                            Age = 41,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1975, 6, 25, 15, 25, 20, 417, DateTimeKind.Utc).AddTicks(168),
-                            Description = "Dolore similique natus eum illum eligendi.",
-                            FirstName = "Gregorio",
-                            LastName = "Coronado",
-                            PictureId = new Guid("19a3455f-96cf-4aed-a37b-f90e34df0fcf"),
-                            CourseId = new Guid("4bdf89fb-fe52-4d0c-b4af-e285e8d57fc6")
-                        },
-                        new
-                        {
-                            Id = new Guid("a9df18cc-d325-4030-97af-1d89d0ebbe39"),
-                            Age = 64,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1949, 12, 30, 19, 43, 31, 721, DateTimeKind.Utc).AddTicks(2820),
-                            Description = "Perspiciatis ratione est.",
-                            FirstName = "Rosalia",
-                            LastName = "Rael",
-                            PictureId = new Guid("911bd40e-fa45-4ba8-918f-90cf10bc2bb5"),
-                            CourseId = new Guid("b9df4ade-39ae-424c-8271-133cf6bef19b")
-                        },
-                        new
-                        {
-                            Id = new Guid("570d8591-fa0a-4320-80fd-60e6923b88d4"),
-                            Age = 56,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1932, 10, 24, 17, 50, 20, 662, DateTimeKind.Utc).AddTicks(1371),
-                            Description = "Non ea earum iste rerum animi.",
-                            FirstName = "Gregorio",
-                            LastName = "Montenegro",
-                            PictureId = new Guid("5ad0a7ff-e61c-4654-9aea-09b50f4f72b1"),
-                            CourseId = new Guid("6c47a25e-4dc0-440a-847b-c8387f6ef877")
-                        },
-                        new
-                        {
-                            Id = new Guid("050cb727-0eed-49d8-85eb-d73fe591db8e"),
-                            Age = 55,
+                            Id = new Guid("60031c17-23da-40fd-b98f-88564796f289"),
+                            Age = 50,
                             BloodStatus = 2,
-                            DateOfBirth = new DateTime(1957, 9, 22, 21, 39, 24, 617, DateTimeKind.Utc).AddTicks(8895),
-                            Description = "Nihil ea ducimus molestias.",
-                            FirstName = "Adriana",
-                            LastName = "Cervántez",
-                            PictureId = new Guid("b8da827f-f045-4098-ba3a-db3fd7dcc520"),
-                            CourseId = new Guid("a2d2f532-f931-428a-b777-8ab00ef28234")
+                            DateOfBirth = new DateTime(1967, 11, 28, 22, 19, 19, 861, DateTimeKind.Utc).AddTicks(9420),
+                            Description = "Consectetur enim at occaecati explicabo.",
+                            FirstName = "José Luis",
+                            LastName = "Meraz",
+                            PictureId = new Guid("41435b4a-c060-43ec-bf77-232d7ceec2d3"),
+                            CourseId = new Guid("fcf889c5-2c34-4ce7-92bc-d76afd69cfa8")
                         },
                         new
                         {
-                            Id = new Guid("e0bb8237-4c88-4260-8b97-37cc9d36dab4"),
-                            Age = 37,
+                            Id = new Guid("5203e0e4-ec98-4d54-890d-0b3b6bc9090f"),
+                            Age = 31,
                             BloodStatus = 4,
-                            DateOfBirth = new DateTime(1959, 9, 20, 7, 9, 0, 891, DateTimeKind.Utc).AddTicks(7255),
-                            Description = "Voluptatum sed voluptatem nisi ut magni ut voluptates officiis culpa.",
-                            FirstName = "Caridad",
-                            LastName = "Urbina",
-                            PictureId = new Guid("0f57f8a3-3576-4738-941c-09d2a1af3df7"),
-                            CourseId = new Guid("54b4588f-9516-4184-8d9c-f749c6754d6a")
+                            DateOfBirth = new DateTime(1981, 10, 22, 4, 17, 10, 876, DateTimeKind.Utc).AddTicks(6041),
+                            Description = "In quaerat eos et ut laudantium.",
+                            FirstName = "Carmen",
+                            LastName = "Laboy",
+                            PictureId = new Guid("23cbf5d0-9e29-4046-a221-7fa6cc54fc32"),
+                            CourseId = new Guid("4a9beba4-d0e3-486c-8d60-6d372b1b0da9")
+                        },
+                        new
+                        {
+                            Id = new Guid("6eee5a2a-3d65-41f0-aadd-a58bdfb1c9a2"),
+                            Age = 45,
+                            BloodStatus = 1,
+                            DateOfBirth = new DateTime(1947, 11, 21, 21, 15, 31, 567, DateTimeKind.Utc).AddTicks(2783),
+                            Description = "Fugit est in id voluptas voluptatem.",
+                            FirstName = "Marisol",
+                            LastName = "Griego",
+                            PictureId = new Guid("3fb8e9d0-a3fe-4881-9804-f1dcfb045f49"),
+                            CourseId = new Guid("6674d8f1-6bb2-467c-b865-4b3218400204")
+                        },
+                        new
+                        {
+                            Id = new Guid("75f724fc-8732-4e4b-89a5-456d852d7bc4"),
+                            Age = 43,
+                            BloodStatus = 3,
+                            DateOfBirth = new DateTime(1976, 1, 23, 8, 41, 24, 411, DateTimeKind.Utc).AddTicks(6132),
+                            Description = "Est autem dicta accusantium illo omnis provident.",
+                            FirstName = "Ramiro",
+                            LastName = "Casillas",
+                            PictureId = new Guid("cbe5943e-c9b9-432e-a5dd-f61a71ddd3b2"),
+                            CourseId = new Guid("5de388f6-f352-4f25-a51a-a3ffa4b16652")
+                        },
+                        new
+                        {
+                            Id = new Guid("bc142fbd-7a29-4280-ab36-6e2e5a427c47"),
+                            Age = 28,
+                            BloodStatus = 2,
+                            DateOfBirth = new DateTime(1971, 12, 20, 5, 29, 0, 202, DateTimeKind.Utc).AddTicks(167),
+                            Description = "Facere eos voluptas ipsum.",
+                            FirstName = "Josefina",
+                            LastName = "Delafuente",
+                            PictureId = new Guid("33d84a92-eca5-4b3a-8000-63fb23f5d381"),
+                            CourseId = new Guid("a3ce5b6c-1e86-4882-857e-2c5edca7165c")
+                        },
+                        new
+                        {
+                            Id = new Guid("cd7d42b6-4059-497f-9539-b0f5a083f8bf"),
+                            Age = 34,
+                            BloodStatus = 0,
+                            DateOfBirth = new DateTime(1969, 11, 14, 7, 42, 28, 213, DateTimeKind.Utc).AddTicks(353),
+                            Description = "Est officia quia voluptatem.",
+                            FirstName = "Lorena",
+                            LastName = "Montaño",
+                            PictureId = new Guid("516a3c6c-55e1-4ffa-a67f-3c1573ff0079"),
+                            CourseId = new Guid("257f0993-7158-499a-a453-49ce2617757c")
+                        },
+                        new
+                        {
+                            Id = new Guid("703982ae-85cb-4c6f-ae1b-b0ce653a3524"),
+                            Age = 65,
+                            BloodStatus = 1,
+                            DateOfBirth = new DateTime(1908, 4, 19, 4, 12, 5, 183, DateTimeKind.Utc).AddTicks(4649),
+                            Description = "Eveniet ab dolor animi consequuntur temporibus consequatur est.",
+                            FirstName = "Jorge",
+                            LastName = "Cintrón",
+                            PictureId = new Guid("e0b78d72-e6d0-4a60-afe3-945ab9162f6c"),
+                            CourseId = new Guid("594b6ea2-8673-4907-af27-f4134e7d0286")
+                        },
+                        new
+                        {
+                            Id = new Guid("db030056-0ed6-4e3d-a7c3-46d586d61e15"),
+                            Age = 40,
+                            BloodStatus = 4,
+                            DateOfBirth = new DateTime(1972, 4, 10, 13, 36, 7, 469, DateTimeKind.Utc).AddTicks(8496),
+                            Description = "Distinctio eveniet eveniet adipisci cumque doloribus.",
+                            FirstName = "María Soledad",
+                            LastName = "Zúñiga",
+                            PictureId = new Guid("b6518dd1-0624-490c-9c17-311d4cc700a2"),
+                            CourseId = new Guid("505fbebc-3e0d-44ea-9be1-ebb7ed7c449a")
+                        },
+                        new
+                        {
+                            Id = new Guid("13a78a3c-9472-4453-9b1f-d3c8879b57c9"),
+                            Age = 45,
+                            BloodStatus = 0,
+                            DateOfBirth = new DateTime(1959, 6, 11, 22, 43, 46, 698, DateTimeKind.Utc).AddTicks(2412),
+                            Description = "Hic voluptas voluptatem animi in tempora consectetur beatae quisquam.",
+                            FirstName = "Andrés",
+                            LastName = "Mateo",
+                            PictureId = new Guid("90f26602-3842-4bf6-b669-2f8221729add"),
+                            CourseId = new Guid("e536896f-fe74-4b11-86d6-c1a191a16b11")
                         });
                 });
 
@@ -923,243 +923,243 @@ namespace Hogwarts.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4a5ef299-cb93-414f-ab79-9a68a8fca29a"),
-                            Age = 11,
-                            BloodStatus = 4,
-                            DateOfBirth = new DateTime(2003, 5, 28, 6, 8, 36, 502, DateTimeKind.Utc).AddTicks(1543),
-                            Description = "Autem perspiciatis cum est officia qui sit perferendis.",
-                            FirstName = "Antonio",
-                            LastName = "Raya",
-                            PictureId = new Guid("01961b12-3bc9-40df-b700-085730a85346"),
-                            HouseId = new Guid("40f4b844-b0a4-4178-a5d9-c2ae70a8932b")
-                        },
-                        new
-                        {
-                            Id = new Guid("35d5e574-b5c6-476c-b64f-c6afff2f216f"),
-                            Age = 15,
-                            BloodStatus = 4,
-                            DateOfBirth = new DateTime(2003, 7, 28, 6, 14, 38, 236, DateTimeKind.Utc).AddTicks(9287),
-                            Description = "Itaque ipsa nihil velit at et aperiam.",
-                            FirstName = "Cristina",
-                            LastName = "Vergara",
-                            PictureId = new Guid("832220bb-0e09-48c4-a5ad-e13d62719654"),
-                            HouseId = new Guid("24248a2a-d323-47fd-8be7-3b9e415d9a91")
-                        },
-                        new
-                        {
-                            Id = new Guid("42bad019-adf0-4cd9-945a-0fb4d544b560"),
-                            Age = 13,
-                            BloodStatus = 2,
-                            DateOfBirth = new DateTime(2001, 7, 3, 17, 29, 10, 595, DateTimeKind.Utc).AddTicks(2784),
-                            Description = "Asperiores veritatis quis dolores placeat sint qui quia.",
-                            FirstName = "Octavio",
-                            LastName = "Cervántez",
-                            PictureId = new Guid("fcebf517-7d51-462b-be46-edad1a296a5f"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
-                        },
-                        new
-                        {
-                            Id = new Guid("f3823bd4-ff2c-492b-b350-384eacdacc73"),
-                            Age = 12,
-                            BloodStatus = 2,
-                            DateOfBirth = new DateTime(2004, 11, 16, 20, 53, 29, 197, DateTimeKind.Utc).AddTicks(7338),
-                            Description = "Tenetur nesciunt nihil id nulla voluptate vel quia ipsum.",
-                            FirstName = "Rafael",
-                            LastName = "Ocasio",
-                            PictureId = new Guid("27570a3f-0958-4cf4-95cc-b4e41ce69e24"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
-                        },
-                        new
-                        {
-                            Id = new Guid("6e71a59c-e1fe-4475-85a8-8ae7eadd0b1c"),
+                            Id = new Guid("7418e34e-cf82-4b61-8f06-bd87e809b732"),
                             Age = 17,
                             BloodStatus = 0,
-                            DateOfBirth = new DateTime(2005, 4, 10, 14, 31, 12, 481, DateTimeKind.Utc).AddTicks(2991),
-                            Description = "Occaecati tempore consequatur alias repellendus harum corrupti excepturi cupiditate.",
-                            FirstName = "Lucía",
-                            LastName = "Domínguez",
-                            PictureId = new Guid("84978f33-1faf-41eb-b815-2366962d0806"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            DateOfBirth = new DateTime(1990, 10, 10, 20, 36, 53, 871, DateTimeKind.Utc).AddTicks(4866),
+                            Description = "Maiores error cumque magnam ut ut est eveniet quia et.",
+                            FirstName = "Francisca",
+                            LastName = "Rentería",
+                            PictureId = new Guid("3022baec-cf7b-4e28-9ccf-83af7177cb49"),
+                            HouseId = new Guid("2f30c323-0c50-41ca-bfd5-2525af1f1be9")
                         },
                         new
                         {
-                            Id = new Guid("89cdf4ee-480d-4fdc-a241-2648bf12edca"),
-                            Age = 13,
-                            BloodStatus = 0,
-                            DateOfBirth = new DateTime(2006, 2, 8, 9, 24, 37, 508, DateTimeKind.Utc).AddTicks(9545),
-                            Description = "Maiores eos laboriosam doloribus.",
-                            FirstName = "Natalia",
-                            LastName = "Rosas",
-                            PictureId = new Guid("71d18bfd-426e-45e7-974e-15c4646f5391"),
-                            HouseId = new Guid("24248a2a-d323-47fd-8be7-3b9e415d9a91")
-                        },
-                        new
-                        {
-                            Id = new Guid("d8d74e5f-2243-49bc-ad52-09dbbc241143"),
-                            Age = 11,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(2004, 4, 5, 3, 51, 33, 137, DateTimeKind.Utc).AddTicks(3870),
-                            Description = "Quasi cum vel nihil nemo sed blanditiis.",
-                            FirstName = "Antonia",
-                            LastName = "Chávez",
-                            PictureId = new Guid("9a2c71d6-5f21-4ff6-bbd0-746a42880da2"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
-                        },
-                        new
-                        {
-                            Id = new Guid("c92e4206-5682-4cba-8e74-6cc289adbaad"),
-                            Age = 11,
+                            Id = new Guid("41b03c4c-1bc5-4a39-86a7-4636030670b2"),
+                            Age = 17,
                             BloodStatus = 4,
-                            DateOfBirth = new DateTime(2012, 2, 27, 12, 51, 25, 537, DateTimeKind.Utc).AddTicks(3531),
-                            Description = "Rerum ducimus modi quos necessitatibus.",
-                            FirstName = "José Emilio",
-                            LastName = "Mireles",
-                            PictureId = new Guid("7fd2381b-8139-4e3b-afa1-a11284082781"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            DateOfBirth = new DateTime(1998, 4, 21, 21, 6, 50, 799, DateTimeKind.Utc).AddTicks(4786),
+                            Description = "Nam corporis est tenetur explicabo ullam nulla voluptatem consequuntur veritatis.",
+                            FirstName = "Andrés",
+                            LastName = "Quiñónez",
+                            PictureId = new Guid("5c52fa2f-817d-4d99-9ef0-d9e385a5f62c"),
+                            HouseId = new Guid("bf902b43-faed-42ca-97b8-aa1c67acd8ca")
                         },
                         new
                         {
-                            Id = new Guid("7d89bc90-0d93-4ef4-bdab-10d246056524"),
-                            Age = 13,
-                            BloodStatus = 0,
-                            DateOfBirth = new DateTime(2006, 1, 30, 8, 42, 19, 861, DateTimeKind.Utc).AddTicks(9294),
-                            Description = "Natus asperiores voluptas quia laudantium quas facere.",
-                            FirstName = "Felipe",
-                            LastName = "Alba",
-                            PictureId = new Guid("7d762647-a6f7-40ae-8ef5-dd09e035533e"),
-                            HouseId = new Guid("40f4b844-b0a4-4178-a5d9-c2ae70a8932b")
+                            Id = new Guid("93366cef-84f4-49a3-93a4-5ce413f0725b"),
+                            Age = 15,
+                            BloodStatus = 2,
+                            DateOfBirth = new DateTime(2005, 1, 25, 22, 16, 16, 469, DateTimeKind.Utc).AddTicks(2138),
+                            Description = "Voluptatum qui voluptas expedita.",
+                            FirstName = "César",
+                            LastName = "Badillo",
+                            PictureId = new Guid("adde71af-a544-4bd4-a49a-94ea5d76ff00"),
+                            HouseId = new Guid("02b1b2d3-9b14-4dd9-8c76-35ef470ce651")
                         },
                         new
                         {
-                            Id = new Guid("afcdd9d2-8eca-4b8d-8d3e-25b558fa20b0"),
-                            Age = 13,
-                            BloodStatus = 3,
-                            DateOfBirth = new DateTime(1998, 12, 11, 10, 25, 20, 804, DateTimeKind.Utc).AddTicks(4055),
-                            Description = "Accusantium autem aut dolores ipsum qui hic sunt cum.",
-                            FirstName = "Ricardo",
-                            LastName = "Almaráz",
-                            PictureId = new Guid("f184d732-805a-4d97-81db-e3a935e84278"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            Id = new Guid("5c077fb3-5636-45ce-aacc-ef2d80234b49"),
+                            Age = 12,
+                            BloodStatus = 2,
+                            DateOfBirth = new DateTime(2005, 9, 20, 7, 1, 6, 793, DateTimeKind.Utc).AddTicks(8178),
+                            Description = "Possimus qui assumenda unde.",
+                            FirstName = "Agustín",
+                            LastName = "Pacheco",
+                            PictureId = new Guid("d44b0265-3715-4440-a697-a3079f5f3694"),
+                            HouseId = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946")
                         },
                         new
                         {
-                            Id = new Guid("dd77d8e5-841d-497e-8d49-12add2937745"),
+                            Id = new Guid("6a2658cc-8085-4210-a8d8-dc980836e02b"),
                             Age = 14,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1997, 8, 8, 9, 23, 23, 197, DateTimeKind.Utc).AddTicks(3172),
-                            Description = "Id expedita aliquid dignissimos quae harum.",
-                            FirstName = "Gabriela",
-                            LastName = "de Jesús",
-                            PictureId = new Guid("26983c54-ce47-444f-9c7f-b945466ef5cd"),
-                            HouseId = new Guid("109dd5e7-164c-4cec-b623-d28be70cc2c2")
+                            BloodStatus = 0,
+                            DateOfBirth = new DateTime(2005, 8, 18, 15, 4, 7, 598, DateTimeKind.Utc).AddTicks(4371),
+                            Description = "Nihil est ducimus harum qui neque.",
+                            FirstName = "José Eduardo",
+                            LastName = "Barrera",
+                            PictureId = new Guid("d9175b5e-91af-451c-8fff-79d43741528e"),
+                            HouseId = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946")
                         },
                         new
                         {
-                            Id = new Guid("2056f277-04a5-4993-b42b-b95409861339"),
+                            Id = new Guid("9d9afdd6-367a-4e96-b24e-5f2ee0539a3d"),
                             Age = 13,
                             BloodStatus = 0,
-                            DateOfBirth = new DateTime(2008, 7, 30, 19, 5, 36, 265, DateTimeKind.Utc).AddTicks(2565),
-                            Description = "Est velit temporibus.",
-                            FirstName = "Roberto",
-                            LastName = "Rascón",
-                            PictureId = new Guid("0890ce8e-4df3-43e8-8ea5-37cc9c2ffaf0"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            DateOfBirth = new DateTime(2010, 2, 10, 22, 50, 5, 486, DateTimeKind.Utc).AddTicks(5851),
+                            Description = "Magnam et est corporis consequatur placeat.",
+                            FirstName = "Leonor",
+                            LastName = "Vallejo",
+                            PictureId = new Guid("f1120108-2c4d-48cd-af34-27b59bcb2a22"),
+                            HouseId = new Guid("bf902b43-faed-42ca-97b8-aa1c67acd8ca")
                         },
                         new
                         {
-                            Id = new Guid("e2e07556-0189-41a2-ae8d-7cd046628a10"),
+                            Id = new Guid("978a1a89-6ed7-4865-9622-ce6f295d9510"),
                             Age = 15,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(1998, 1, 26, 7, 17, 40, 172, DateTimeKind.Utc).AddTicks(6867),
-                            Description = "Suscipit repellendus accusantium sit.",
-                            FirstName = "Beatriz",
-                            LastName = "Alejandro",
-                            PictureId = new Guid("92b9be95-712b-4bcc-9ba4-be31e7a7d12e"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            BloodStatus = 4,
+                            DateOfBirth = new DateTime(1994, 10, 15, 23, 10, 26, 932, DateTimeKind.Utc).AddTicks(3607),
+                            Description = "Nihil sint cum repudiandae soluta mollitia velit non voluptatem.",
+                            FirstName = "Mónica",
+                            LastName = "Soliz",
+                            PictureId = new Guid("b4ff8d82-e01f-4b1e-963e-6df648cd06a5"),
+                            HouseId = new Guid("2f30c323-0c50-41ca-bfd5-2525af1f1be9")
                         },
                         new
                         {
-                            Id = new Guid("e6eb03f6-3127-49f1-b04b-20b436a9de53"),
-                            Age = 11,
-                            BloodStatus = 0,
-                            DateOfBirth = new DateTime(2009, 5, 2, 14, 36, 55, 773, DateTimeKind.Utc).AddTicks(6721),
-                            Description = "Aspernatur est ut.",
-                            FirstName = "María Cristina",
-                            LastName = "Tirado",
-                            PictureId = new Guid("b89b05b8-ebdf-4862-aca3-7b5e83ecea69"),
-                            HouseId = new Guid("109dd5e7-164c-4cec-b623-d28be70cc2c2")
-                        },
-                        new
-                        {
-                            Id = new Guid("2d2ee102-93ff-4bcd-9585-44935c1bebf5"),
-                            Age = 12,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(2002, 8, 5, 22, 3, 33, 718, DateTimeKind.Utc).AddTicks(4108),
-                            Description = "Atque rem qui quis esse quia dolorem dolorem soluta quas.",
-                            FirstName = "Inés",
-                            LastName = "Narváez",
-                            PictureId = new Guid("6cd7ed15-c8f8-413f-9ca2-26a51a9f5696"),
-                            HouseId = new Guid("109dd5e7-164c-4cec-b623-d28be70cc2c2")
-                        },
-                        new
-                        {
-                            Id = new Guid("13b2c9c6-6d59-4c7c-be24-9ab380a2f1fa"),
-                            Age = 11,
+                            Id = new Guid("37d0e30d-f8e6-49d9-b8ee-eab54f552064"),
+                            Age = 15,
                             BloodStatus = 2,
-                            DateOfBirth = new DateTime(2005, 7, 16, 11, 41, 32, 935, DateTimeKind.Utc).AddTicks(3254),
-                            Description = "Nobis aliquam nulla laboriosam fugiat consequuntur sapiente eligendi sint.",
-                            FirstName = "Guadalupe",
-                            LastName = "Ureña",
-                            PictureId = new Guid("31320530-ceb3-4571-864e-8c34b747b924"),
-                            HouseId = new Guid("24248a2a-d323-47fd-8be7-3b9e415d9a91")
+                            DateOfBirth = new DateTime(1997, 11, 22, 13, 49, 23, 283, DateTimeKind.Utc).AddTicks(7826),
+                            Description = "Inventore ipsum cumque ratione non et.",
+                            FirstName = "Ariadna",
+                            LastName = "Oquendo",
+                            PictureId = new Guid("01a52a03-4d4a-4db3-83ff-50b2aee22f9f"),
+                            HouseId = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946")
                         },
                         new
                         {
-                            Id = new Guid("f26e87b8-c04e-4952-9ec4-7f1dd7553dbf"),
-                            Age = 11,
-                            BloodStatus = 0,
-                            DateOfBirth = new DateTime(2006, 9, 16, 2, 15, 6, 81, DateTimeKind.Utc).AddTicks(4624),
-                            Description = "Aut pariatur aut incidunt sed nesciunt nulla rerum.",
-                            FirstName = "Octavio",
-                            LastName = "Colunga",
-                            PictureId = new Guid("0c4ed495-86c1-4fec-9942-71d6c32bb552"),
-                            HouseId = new Guid("109dd5e7-164c-4cec-b623-d28be70cc2c2")
-                        },
-                        new
-                        {
-                            Id = new Guid("dfb80e7b-1d9a-4db5-9b5f-6b0f5f147f44"),
+                            Id = new Guid("bcbc4038-4a9f-4c20-8242-9f0f8a0933c0"),
                             Age = 17,
                             BloodStatus = 0,
-                            DateOfBirth = new DateTime(1996, 1, 31, 23, 53, 51, 811, DateTimeKind.Utc).AddTicks(7756),
-                            Description = "Doloremque voluptates quam libero nemo ut id illo.",
-                            FirstName = "Martín",
-                            LastName = "Espino",
-                            PictureId = new Guid("e022c7ee-03ec-4eb3-b391-4a59a74501c1"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            DateOfBirth = new DateTime(2004, 5, 9, 11, 59, 28, 366, DateTimeKind.Utc).AddTicks(7041),
+                            Description = "Odio adipisci sint cumque sed illo porro ratione.",
+                            FirstName = "Graciela",
+                            LastName = "Viera",
+                            PictureId = new Guid("768a7e4a-df7c-46c8-830e-459ff6b8e55a"),
+                            HouseId = new Guid("bf902b43-faed-42ca-97b8-aa1c67acd8ca")
                         },
                         new
                         {
-                            Id = new Guid("daaebe41-85ce-40c2-b7dd-1d10c819ca58"),
-                            Age = 12,
+                            Id = new Guid("0a0aa4a1-6748-404c-a046-947ea7864c43"),
+                            Age = 11,
                             BloodStatus = 2,
-                            DateOfBirth = new DateTime(2006, 7, 6, 18, 22, 5, 790, DateTimeKind.Utc).AddTicks(2936),
-                            Description = "Dolores provident quam voluptates accusamus.",
-                            FirstName = "Antonia",
-                            LastName = "Esparza",
-                            PictureId = new Guid("c300d4ca-aa33-4789-bde4-8590e09270f4"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            DateOfBirth = new DateTime(2010, 3, 3, 12, 9, 28, 462, DateTimeKind.Utc).AddTicks(3033),
+                            Description = "Praesentium qui pariatur ut sunt a consequatur exercitationem ad quas.",
+                            FirstName = "José Emilio",
+                            LastName = "Arteaga",
+                            PictureId = new Guid("8312bf62-ebd1-42e5-8398-ddbc76ed666e"),
+                            HouseId = new Guid("bf902b43-faed-42ca-97b8-aa1c67acd8ca")
                         },
                         new
                         {
-                            Id = new Guid("40642373-111c-477c-b9bc-2262b98bd46d"),
+                            Id = new Guid("f0e36503-ca55-46d2-9899-444bda9da567"),
+                            Age = 14,
+                            BloodStatus = 2,
+                            DateOfBirth = new DateTime(2010, 5, 11, 1, 42, 29, 340, DateTimeKind.Utc).AddTicks(4842),
+                            Description = "Sunt sapiente et voluptatem nostrum.",
+                            FirstName = "Ana Luisa",
+                            LastName = "Brito",
+                            PictureId = new Guid("2af32132-0740-4923-bb73-3c2296231d26"),
+                            HouseId = new Guid("2f30c323-0c50-41ca-bfd5-2525af1f1be9")
+                        },
+                        new
+                        {
+                            Id = new Guid("bf9dbe8b-63d9-447c-9772-7ba915118e08"),
+                            Age = 14,
+                            BloodStatus = 4,
+                            DateOfBirth = new DateTime(2008, 10, 4, 7, 42, 19, 501, DateTimeKind.Utc).AddTicks(3647),
+                            Description = "Incidunt voluptatem voluptate.",
+                            FirstName = "Pedro",
+                            LastName = "Dueñas",
+                            PictureId = new Guid("84b38a4d-f3f7-4cbe-ac95-33f6f23a212c"),
+                            HouseId = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946")
+                        },
+                        new
+                        {
+                            Id = new Guid("f85e0f5b-e124-4f90-8a0f-6c7152152b14"),
+                            Age = 17,
+                            BloodStatus = 2,
+                            DateOfBirth = new DateTime(2005, 5, 3, 14, 0, 48, 94, DateTimeKind.Utc).AddTicks(4147),
+                            Description = "Consequuntur eligendi delectus.",
+                            FirstName = "Verónica",
+                            LastName = "Jurado",
+                            PictureId = new Guid("68cc589b-ca7c-4236-9bf6-40bd6bb7e5ca"),
+                            HouseId = new Guid("2f30c323-0c50-41ca-bfd5-2525af1f1be9")
+                        },
+                        new
+                        {
+                            Id = new Guid("0e34e2b7-dc7e-484a-9639-3b8f94716770"),
+                            Age = 17,
+                            BloodStatus = 2,
+                            DateOfBirth = new DateTime(1995, 1, 31, 18, 6, 13, 92, DateTimeKind.Utc).AddTicks(1901),
+                            Description = "Voluptatem rem dicta.",
+                            FirstName = "Irene",
+                            LastName = "Tórrez",
+                            PictureId = new Guid("d97d9548-c5c4-4bfc-936e-d1449d5629e8"),
+                            HouseId = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946")
+                        },
+                        new
+                        {
+                            Id = new Guid("950b9baa-05b2-4ebb-8394-adeae4552a30"),
+                            Age = 12,
+                            BloodStatus = 3,
+                            DateOfBirth = new DateTime(2005, 3, 12, 18, 14, 46, 329, DateTimeKind.Utc).AddTicks(3615),
+                            Description = "Itaque laboriosam dolor officia sunt.",
+                            FirstName = "Pablo",
+                            LastName = "Crespo",
+                            PictureId = new Guid("7adb817c-d359-4c20-869e-d93d9d8e9dd2"),
+                            HouseId = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946")
+                        },
+                        new
+                        {
+                            Id = new Guid("3431da91-11a1-4d44-8758-bf227a41453f"),
                             Age = 13,
-                            BloodStatus = 1,
-                            DateOfBirth = new DateTime(2007, 3, 23, 22, 35, 26, 99, DateTimeKind.Utc).AddTicks(2198),
-                            Description = "Doloribus enim qui cumque soluta nam asperiores sit quo quia.",
-                            FirstName = "Elena",
-                            LastName = "Ávalos",
-                            PictureId = new Guid("1e33eb0f-ab78-437e-8437-f8d4080d014c"),
-                            HouseId = new Guid("a784a261-3009-484a-9ca5-d141630c932f")
+                            BloodStatus = 0,
+                            DateOfBirth = new DateTime(2004, 1, 31, 9, 34, 23, 788, DateTimeKind.Utc).AddTicks(5344),
+                            Description = "Voluptatem placeat necessitatibus est quis.",
+                            FirstName = "Benjamín",
+                            LastName = "Barreto",
+                            PictureId = new Guid("949868c0-d154-4932-b953-fe87367cfdf9"),
+                            HouseId = new Guid("803b7918-91a9-46f7-a5d9-5074f79ba946")
+                        },
+                        new
+                        {
+                            Id = new Guid("cc7105aa-51f5-489a-be3e-279f95d3e518"),
+                            Age = 11,
+                            BloodStatus = 0,
+                            DateOfBirth = new DateTime(2010, 4, 21, 20, 32, 17, 709, DateTimeKind.Utc).AddTicks(2511),
+                            Description = "Minima eveniet inventore nostrum est.",
+                            FirstName = "Carlota",
+                            LastName = "Pedraza",
+                            PictureId = new Guid("30fd2ff0-ed86-448e-85a6-034fb3e388ef"),
+                            HouseId = new Guid("bf902b43-faed-42ca-97b8-aa1c67acd8ca")
+                        },
+                        new
+                        {
+                            Id = new Guid("4e913452-1f25-4d58-a79e-38778c1a7512"),
+                            Age = 14,
+                            BloodStatus = 2,
+                            DateOfBirth = new DateTime(2005, 6, 15, 20, 45, 38, 478, DateTimeKind.Utc).AddTicks(4678),
+                            Description = "Quo architecto dolores quidem illo.",
+                            FirstName = "Clemente",
+                            LastName = "Canales",
+                            PictureId = new Guid("43cb966a-9e47-4625-bee7-979b2ce91ead"),
+                            HouseId = new Guid("02b1b2d3-9b14-4dd9-8c76-35ef470ce651")
+                        },
+                        new
+                        {
+                            Id = new Guid("27f6b61f-42ce-4b38-a983-75a6838d751c"),
+                            Age = 15,
+                            BloodStatus = 4,
+                            DateOfBirth = new DateTime(1994, 12, 23, 2, 42, 53, 923, DateTimeKind.Utc).AddTicks(8574),
+                            Description = "Et sunt expedita ut esse dolor est quisquam laborum.",
+                            FirstName = "Estela",
+                            LastName = "Robledo",
+                            PictureId = new Guid("31d9c3fd-05a6-4e86-ab75-4d4cfc564dda"),
+                            HouseId = new Guid("02b1b2d3-9b14-4dd9-8c76-35ef470ce651")
+                        },
+                        new
+                        {
+                            Id = new Guid("27609a7c-4ce8-41b3-a252-5208dd3edf5a"),
+                            Age = 12,
+                            BloodStatus = 4,
+                            DateOfBirth = new DateTime(2005, 3, 23, 20, 4, 2, 96, DateTimeKind.Utc).AddTicks(1524),
+                            Description = "Earum libero corrupti maiores vel sapiente omnis harum.",
+                            FirstName = "Natalia",
+                            LastName = "Díaz",
+                            PictureId = new Guid("274f5101-03f6-45ea-9247-9ec159d5b660"),
+                            HouseId = new Guid("bf902b43-faed-42ca-97b8-aa1c67acd8ca")
                         });
                 });
 
