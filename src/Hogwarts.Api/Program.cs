@@ -1,5 +1,6 @@
 using Hogwarts.Api;
 using Hogwarts.Api.Extensions;
+using Hogwarts.Api.Middleware;
 using Hogwarts.Application;
 using Hogwarts.Infrastructure;
 
@@ -11,6 +12,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApi();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

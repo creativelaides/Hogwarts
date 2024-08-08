@@ -4,6 +4,7 @@ using MediatR;
 using Hogwarts.Application.Features.CourseOperations.Commands;
 using static Hogwarts.Application.Features.CourseOperations.Commands.CreateCourseCommand;
 using static Hogwarts.Application.Features.CourseOperations.Queries.ReportCourseQuery;
+using Hogwarts.Application.Core;
 
 namespace Hogwarts.Api;
 
@@ -19,14 +20,14 @@ public class CoursesController: ControllerBase
     }
 
     [HttpPost("create")]
-    public async Task<ActionResult<Guid>> CreateCourse(
+    public async Task<ActionResult<Result<Guid>>> CreateCourse(
         [FromForm] CreateCourseRequest request,
         CancellationToken cancellationToken
     )
     {
+        // throw new Exception("Prueba de Exception de Middleware");
         var command = new CreateCourseCommandRequest(request);
-        var result = await _sender.Send(command, cancellationToken);
-        return Ok(result);
+        return await _sender.Send(command, cancellationToken);
     }
 
     [HttpGet("report")]

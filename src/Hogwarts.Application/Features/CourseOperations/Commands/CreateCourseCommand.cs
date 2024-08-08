@@ -1,4 +1,5 @@
-﻿using Hogwarts.Domain.Entities;
+﻿using Hogwarts.Application.Core;
+using Hogwarts.Domain.Entities;
 using Hogwarts.Infrastructure;
 using MediatR;
 
@@ -6,18 +7,13 @@ namespace Hogwarts.Application.Features.CourseOperations.Commands;
 
 public class CreateCourseCommand
 {
-    public record CreateCourseCommandRequest(CreateCourseRequest CreateCourseRequest) : IRequest<Guid>;
+    public record CreateCourseCommandRequest(CreateCourseRequest CreateCourseRequest) : IRequest<Result<Guid>>;
 
-    internal class CreateCourseCommandHandler : IRequestHandler<CreateCourseCommandRequest, Guid>
+    internal class CreateCourseCommandHandler(HogwartsDbContext context) : IRequestHandler<CreateCourseCommandRequest, Result<Guid>>
     {
-        private readonly HogwartsDbContext _context;
+        private readonly HogwartsDbContext _context = context;
 
-        public CreateCourseCommandHandler(HogwartsDbContext context)
-        {
-            _context = context;
-        }
-
-        public async Task<Guid> Handle(
+        public async Task<Result<Guid>> Handle(
             CreateCourseCommandRequest request, 
             CancellationToken cancellationToken)
         {
@@ -31,9 +27,13 @@ public class CreateCourseCommand
 
             _context.Add(course);
 
-            await _context.SaveChangesAsync(cancellationToken);
+            var result = await _context.SaveChangesAsync(cancellationToken) > 0;
 
-            return course.Id;
+            return Result<Guid>.Failure("No se pudo insertar el curso");
+
+            // return result 
+            //     ? Result<Guid>.Success(course.Id)
+            //     : Result<Guid>.Failure("No se pudo insertar el cupo");
         }
     }
 }

@@ -112,3 +112,7 @@ Las contribuciones son bienvenidas. Por favor, sigue los pasos a continuación p
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia Pública de Mozilla (MPL) 2.0. Para más información, consulta el archivo [LICENSE](LICENSE).
+
+## Más Información
+
+Para más información acerca de este proyecto y su RoadMap, consulta el archivo [RoadMap](ROADMAP.md).
