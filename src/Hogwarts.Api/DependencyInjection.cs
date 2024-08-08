@@ -1,5 +1,7 @@
+using Hogwarts.Domain.Interfaces;
 using Hogwarts.Infrastructure;
 using Hogwarts.Infrastructure.Identities.Models;
+using Hogwarts.Infrastructure.Reports;
 using Microsoft.AspNetCore.Identity;
 
 namespace Hogwarts.Api;
@@ -22,6 +24,8 @@ public static class DependencyInjection
             })
         .AddRoles<IdentityRole>()
         .AddEntityFrameworkStores<HogwartsDbContext>();
+
+        services.AddScoped(typeof(IReportServices<>), typeof(ReportService<>));
 
         return services;
     }
